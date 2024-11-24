@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Cascadia Mono;
+
+}
+
+header {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(135, 206, 235, 0.9);
+    color: white;
+    
+  justify-items: center;
+    z-index: 1000;
+    
+}
+
+.navigation {
+    display: flex;
+    padding-right: 2rem;
+    justify-content: end;
+    
+    
+    
+   
+    
+    
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+header div {
+    display: flex;
+    position: relative;
+    background-color: white;
+    color: black;
+
+}
+
+
+
+.hero {
+    background-image: url(/HapsiraPunes/img/CRJ-1000.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
