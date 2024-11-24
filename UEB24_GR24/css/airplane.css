@@ -1,87 +1,205 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-html {
-    font-family: Cascadia Mono;
+    html {
+        font-family: Cascadia Mono;
+        font-size: 18;
 
-}
+    }
 
-header {
+    header {
 
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
 
-}
+    }
 
-nav {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background: rgba(135, 206, 235, 0.9);
-    color: white;
-    
-  justify-items: center;
-    z-index: 1000;
-    
-}
+    nav {
+        position: fixed;
+        display: flex;
+        top: 0;
+        width: 100%;
+        background: none;
+        /* rgba(135, 206, 235, 0.9) */
+        color: white;
 
-.navigation {
-    display: flex;
-    padding-right: 2rem;
-    justify-content: end;
-    
-    
-    
-   
-    
-    
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        z-index: 1000;
 
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 1rem;
-    font-size: 1rem;
-
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #ffd700;
-}
-
-header div {
-    display: flex;
-    position: relative;
-    background-color: white;
-    color: black;
-
-}
+        transition: background-color 0.3s ease;
 
 
 
-.hero {
-    background-image: url(/HapsiraPunes/img/CRJ-1000.jpg);
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
 
-}
+    }
 
-.hero h1 {
-    font-size: 48px;
-}
 
-.hero button {
-    background-color: #007bff;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    margin: 10px;
-    cursor: pointer;
-}
+
+    .navigation {
+        display: flex;
+        padding-right: 2rem;
+
+
+    }
+
+    nav.scrolled {
+        background: rgba(135, 206, 235, 0.9);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 1rem;
+        font-size: 1rem;
+
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #007bff;
+    }
+
+    header div {
+        display: flex;
+        position: relative;
+        background-color: white;
+        color: black;
+
+    }
+
+
+
+    .hero {
+        background-image: url(/img/pexels-ahmedmuntasir-912050.jpg);
+        background-size: cover;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 0 20px;
+
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero button {
+        background-color: white;
+        color: #007bff;
+        font-weight: 600;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        margin: 10px;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero button:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .search-bar {
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        gap: 1rem;
+        margin: -8rem auto 0 auto;
+        padding: 1rem 2rem 2rem 2rem;
+        max-width: fit-content;
+        border-radius: 5px 5px 0 0;
+        color: black;
+        background-color: white;
+
+
+    }
+
+    .search-bar form {
+        display: flex;
+        gap: 3rem;
+        max-height: max-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-bar .slider {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .search-bar .slider input:hover,
+    .slider input {
+        cursor: e-resize;
+        appearance: none;
+        width: 100%;
+        height: 6px;
+        background: #ddd;
+        border-radius: 5px;
+        margin: 5px 0;
+        padding: 0;
+
+
+    }
+
+
+
+
+    .search-bar .search {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: start;
+    }
+
+    .search-bar input:focus,
+    select:focus {
+        outline: none;
+
+
+    }
+
+
+    .search-bar input {
+        border: none;
+
+    }
+
+    .search-bar select {
+        border: none;
+
+    }
+
+    .search-bar button {
+
+        background-color: #007bff;
+        color: white;
+        padding: 0.5rem 30px;
+        border: none;
+        border-radius: 5px;
+        margin: 10px;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .search-bar button:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+
+    .lorema {
+        max-width: 2px;
+    }
