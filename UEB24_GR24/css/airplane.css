@@ -297,15 +297,15 @@
         border: 1px solid rgba(0, 0, 0, 0.05);
         border-left: 1px solid rgba(0, 0, 0, 0.0.05);
         border-radius: 5px;
-        max-width: 200px;
-        max-height: auto;
+        width: 180px;
+        height: 140px;
         margin: 0 auto;
         /* box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2); */
         box-shadow: 6px 6px 10px rgba(89, 127, 151, 0.2);
         background-color: rgba(220, 219, 206, 0.505);
 
     }
-
+    
     table figure {
         display: flex;
         justify-content: center;
@@ -317,4 +317,12 @@
         width: 200px;
         height: auto;
         
+    }
+
+    td:hover {
+        
+        transform: scale(1.07);
+        transition: 0.3s;
+        cursor: pointer;
+
     }
