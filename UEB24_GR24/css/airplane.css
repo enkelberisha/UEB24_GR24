@@ -46,7 +46,7 @@
     }
 
     nav.scrolled {
-        background: rgba(135, 206, 235, 0.9);
+        background: rgba(89, 127, 151, 0.91);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
@@ -63,7 +63,7 @@
         color: #183251;
     }
     header {
-        background-image: url(/img/pexels-ahmedmuntasir-912050.jpg);
+        background-image: url(/UEB24_GR24/img/pexels-ahmedmuntasir-912050.jpg);
         background-size: cover;
         height: 70vh;
         display: flex;
@@ -90,7 +90,7 @@
 
 
     .hero button {
-        background-color: F1F0E8;
+        background-color: #F1F0E8;
         color: #597F97;
         font-weight: 700;
         font-size: 0.9rem;
@@ -125,7 +125,7 @@
         max-width: fit-content;
         border-radius: 5px 5px 0 0;
         color: black;
-        background-color: F1F0E8;
+        background-color: #F1F0E8;
 
 
     }
@@ -316,5 +316,5 @@
     td img {
         width: 200px;
         height: auto;
-        padding: ;
+        
     }

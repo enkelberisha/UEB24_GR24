@@ -5,21 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aerosales</title>
-    <link rel="stylesheet" href="css/airplane.css"><!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aerosales</title>
     <link rel="stylesheet" href="css/airplane.css">
-
 </head>
 
 <body>
     <nav>
         <div class="logo">
-            <img src="img/" alt="Site logo " style="width: 15rem;">
+            <img src="img/673761384f67428113e09c0a.png" alt="Site logo " style="width: 15rem;">
         </div>
         <div class="navigation">
             <a href="#home">Home</a>
@@ -31,24 +23,26 @@
         </div>
     </nav>
 
-    <div class="hero">
-
-        <h1>Find Aircraft for Sale & Rent</h1>
-        <p>Buy, Trade & Sell with Aerosales</p>
-        <div>
-            <button>Buy an Aircraft</button>
-            <button>Sell an Aircraft</button>
+    <header>
+        <div class="hero">
+            <h1>Find Aircraft for Sale & Rent</h1>
+            <p>Buy, Trade & Sell with Aerosales</p>
+            <div>
+                <button>Buy an Aircraft</button>
+                <button>Sell an Aircraft</button>
+            </div>
         </div>
-    </div>
+    </header>
+
     <div class="search-bar">
         <h2>Find your Aircraft </h2>
-        <form method="get">
+        <form method="post" action="">
             <div class="search">
                 <label for="query">Search</label>
-                <input type="text" name="query" id="query" style="max-height: fit-content;" autocomplete="off">
+                <input type="text" name="query" id="query" style="max-height: fit-content;background-color: #F1F0E8" autocomplete="off">
                 <hr>
             </div>
-            <select name="category" style="max-height: fit-content;">
+            <select name="category" style="max-height: fit-content;background-color: #F1F0E8;">
                 <option value="all">All Categories</option>
                 <option value="sale">For Sale</option>
                 <option value="rent">For Rent</option>
@@ -58,23 +52,158 @@
                 <label for="slider" style="text-align: start;">Price range: </label>
                 <span id="rangeValue" style="text-align: start;">50</span>
                 <input id="slider" type="range" min="0" max="100" value="50">
-
             </div>
-
-
             <button type="submit" style="max-height: fit-content;">Search</button>
-
         </form>
+    </div>
+    <div class="showcase">
+
+        <div class="imagecontainer">
+            <a href="">
+                <figure>
+
+                    <img src="img/2015 LEARJET 75.webp" alt="2015 LEARJET 75">
+                    <p>#XA-RSC</p>
+                    <figcaption>2015 LEARJET 75</figcaption>
+                </figure>
+
+
+
+            </a>
+        </div>
+        <div class="imagecontainer">
+            <a href="">
+
+                <figure>
+                    <img src="img/N1120G - 2000 GULFSTREAM GV.webp" alt="2000 GULFSTREAM GV">
+                    <p>#N1120G</p>
+                    <figcaption>
+                        2000 GULFSTREAM GV
+                    </figcaption>
+                </figure>
+
+
+            </a>
+        </div>
+        <div class="imagecontainer">
+            <a href="">
+
+                <figure>
+                    <img src="img/T7-EAGLE - 2002 BOMBARDIER GLOBAL EXPRESS.jpg"
+                        alt="T7-EAGLE - 2002 BOMBARDIER GLOBAL EXPRESS">
+                    <p>#T7-EAGLE</p>
+                    <figcaption>
+                        2002 BOMBARDIER GLOBAL EXPRESS
+                    </figcaption>
+                </figure>
+
+
+
+            </a>
+        </div>
+        <div class="imagecontainer">
+            <a href="">
+                <figure>
+
+                    <img src="img/DASSAULT FALCON 2000.webp" alt="DASSAULT FALCON 2000">
+                    <p>#N48FB</p>
+                    <figcaption>
+                        DASSAULT FALCON 2000
+                    </figcaption>
+                </figure>
+
+            </a>
+
+
+        </div>
+
 
     </div>
-    <header>
+    <div class="popular">
+        <table cellpadding="10">
+            <tr>
+                <th colspan="4">Popular Brands</th>
+            </tr>
+            <tr>
+                <td><a href="https://bombardier.com/en" target="_blank">
+                        <figure>
+                            <img src="img/PopularBrands/Bombardier.png" alt="BOMBARDIER">
+                        </figure>
+                    </a></td>
+                <td><a href="https://www.airbus.com/en" target="_blank">
+                        <figure>
+                            <img src="img/PopularBrands/Airbus.png" alt="AIRBUS">
+                        </figure>
+                    </a></td>
+                <td><a href="https://www.boeingdistribution.com/" target="_blank">
+                        <figure>
+                            <img src="img/PopularBrands/Boeing.png" alt="BOEING">
+                        </figure>
+                    </a></td>
+                <td><a href="https://gulfstream.com/en/" target="_blank">
+                        <figure>
+                            <img src="img/PopularBrands/Gulfstream Aerospace.png" alt="GULFSTREAM">
+                        </figure>
+                    </a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.dassault-aviation.com/en/" target="_blank">
+                        <figure>
+                            <img src="img/PopularBrands/Dassault.png" alt="DASSAULT">
+                        </figure>
+                    </a></td>
+                <td><a href="https://pilatus-aircraft.com/" target="_blank">
+                        <figure>
+                            <img src="img/PopularBrands/Pilatus.png" alt="Pilatus">
+                        </figure>
+                    </a></td>
+                <td><a href="https://www.hondajet.com/" target="_blank">
+                        <figure>
+                            <img src="img/PopularBrands/HondaJet.png" alt="HONDAJET">
+                        </figure>
+                    </a></td>
+                <td><a href="https://www.nextantaerospace.com/" target="_blank">
+                        <figure>
+                            <img src="img/PopularBrands/Nextant.png" alt="Nextant">
+                        </figure>
+                    </a></td>
+            </tr>
+            <tr>
+                <td><a href="https://cessna.txtav.com/" target="_blank">
+                        <figure>
+                            <img src="img/PopularBrands/Cessna.png" alt="Cessna">
+                        </figure>
+                    </a></td>
+                <td><a href="https://defense.embraer.com/" target="_blank">
+                        <figure>
+                            <img src="img/PopularBrands/Embraer.png" alt="Embraer">
+                        </figure>
+                    </a></td>
+                <td><a href="https://piaggioaerospace.it/" target="_blank">
+                        <figure>
+                            <img src="img/PopularBrands/Piaggio.png" alt="Piaggio">
+                        </figure>
+                    </a></td>
+                <td><a href="https://beechcraft.txtav.com/" target="_blank">
+                        <figure>
+                            <img src="img/PopularBrands/beechcraft.svg" alt="beechcraft">
+                        </figure>
+                    </a></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit facere praesentium et, magni
+            consequatur excepturi harum suscipit! Consequuntur tenetur error tempora reprehenderit quod. Asperiores
+            rem autem unde modi quod.</p>
 
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit facere praesentium et, magni
-                consequatur excepturi harum suscipit! Consequuntur tenetur error tempora reprehenderit quod. Asperiores
-                rem autem unde modi quod.</p>
-        </div>
-    </header>
+    </div>
+
+
+
+
+       
+    
     <div>
 
         <h1 class="lorema">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis veniam soluta, nesciunt
@@ -89,47 +218,7 @@
 </body>
 
 </html>
-</head>
 
-<body>
-    <nav>
-        <div class="logo">
-            <img src="/HapsiraPunes/img/673761384f67428113e09c0a.png" alt="Site logo"
-                style="width: 20rem;padding-left: 2rem;padding-top: 2rem;">
-        </div>
-        <div class="navigation">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#resources">Resources</a>
-            <a href="#staff">Staff</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
 
-    <div class="hero">
-    
-        <h1>Find Aircraft for Sale & Rent</h1>
-        <p>Buy, Trade & Sell with Aerosales</p>
-        <button>Buy an Aircraft</button>
-        <button>Sell an Aircraft</button>
-    </div>
-    <header>
 
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit facere praesentium et, magni
-                consequatur excepturi harum suscipit! Consequuntur tenetur error tempora reprehenderit quod. Asperiores
-                rem autem unde modi quod.</p>
-        </div>
-    </header>
-    <div>
-
-        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis veniam soluta, nesciunt praesentium
-            expedita, quod officiis vitae sunt earum dolore dolor quo. Inventore autem deserunt vel nulla sit unde
-            repellendus!</h1>
-        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis veniam soluta, nesciunt praesentium
-            expedita, quod officiis vitae sunt earum dolore dolor quo. Inventore autem deserunt vel nulla sit unde
-            repellendus!</h1>
-    </div>
-</body>
-
-</html>
+  
