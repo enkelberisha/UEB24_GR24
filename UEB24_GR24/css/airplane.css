@@ -1,6 +1,7 @@
     * {
         margin: 0;
         padding: 0;
+
     }
 
     html {
@@ -11,6 +12,7 @@
 
     body {
         background-color: #f1f0e9;
+
     }
 
 
@@ -61,7 +63,7 @@
     }
 
     nav a:hover {
-        color: #183251;
+        color: blaxck solid;
     }
 
     header {
@@ -74,7 +76,7 @@
         color: #F1F0E8;
         text-align: center;
         padding: 0 20px 50px;
-   
+
     }
 
 
@@ -93,6 +95,7 @@
         position: relative;
         z-index: 1;
         margin-top: -2rem;
+        text-shadow: 0 0 14px black;
     }
 
     .hero h1 {
@@ -117,7 +120,7 @@
         box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
         border-right: 2px rgba(0, 0, 0, 0.2) solid;
         border-bottom: 2px rgba(0, 0, 0, 0.2) solid;
-       
+
 
     }
 
@@ -126,6 +129,7 @@
         background-color: #597F97;
         color: white;
         transition: 0.5s;
+
     }
 
 
@@ -141,7 +145,7 @@
         margin: -8rem auto 0 auto;
         padding: 1rem 2rem 2rem 2rem;
         max-width: fit-content;
-        border-radius: 15px ;
+        border-radius: 15px;
         color: black;
         background-color: #F1F0E8;
 
@@ -348,15 +352,16 @@
     }
 
 
-.plane-types div{
-width: 10%;
-}
+    .plane-types div {
+        width: 10%;
+    }
 
 
 
 
 
-    .jet-charter-luxury, .jet-charter-space {
+    .jet-charter-luxury,
+    .jet-charter-space {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -365,52 +370,61 @@ width: 10%;
         background-color: #f9f9f9;
     }
 
-    .image-container-luxury,.image-container-space {
+    .image-container-luxury,
+    .image-container-space {
         flex: 1;
     }
 
-    .image-container-luxury img, .image-container-space img {
+    .image-container-luxury img,
+    .image-container-space img {
         width: 100%;
         height: auto;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .text-container-luxury,.text-container-space {
+    .text-container-luxury,
+    .text-container-space {
         flex: 1;
         max-width: 600px;
         color: #333;
     }
 
-    .text-container-luxury h2, .text-container-space h2 {
+    .text-container-luxury h2,
+    .text-container-space h2 {
         font-size: 2rem;
         margin-bottom: 0.5rem;
         color: #333;
     }
 
-    .text-container-luxury hr, .text-container-space hr {
+    .text-container-luxury hr,
+    .text-container-space hr {
         width: 50%;
         border: 1px solid #ccc;
         margin: 1rem 0;
     }
 
-    .text-container-luxury p, .text-container-space p {
+    .text-container-luxury p,
+    .text-container-space p {
         margin-bottom: 1.5rem;
         line-height: 1.6;
         color: #555;
     }
 
-    .text-container-luxury ul, .text-container-space ul {
+    .text-container-luxury ul,
+    .text-container-space ul {
         margin-bottom: 1.5rem;
         padding-left: 1.5rem;
     }
 
-    .text-container-luxury ul li, .text-container-space ul li {
+    .text-container-luxury ul li,
+    .text-container-space ul li {
         margin-bottom: 0.5rem;
         line-height: 1.4;
     }
 
-    .text-container-luxury a, .text-container-space a {
+    .text-container-luxury a,
+    .text-container-space a {
         display: inline-block;
         padding: 0.75rem 1.5rem;
         background-color: #597F97;
@@ -424,46 +438,57 @@ width: 10%;
         border-radius: 10px;
     }
 
-    .text-container-luxury a:hover, .text-container-space a:hover {
+    .text-container-luxury a:hover,
+    .text-container-space a:hover {
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
         background-color: #597F97;
         color: white;
         transition: 0.2s;
     }
-    
+
     .image-container-space {
         order: 2;
     }
 
     .text-container-space {
-        
+
         order: 1;
     }
-   
-    .plane-types{
+
+    .planetypes-slideshow {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .plane-types {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-    width: 50%;
-    gap: 2rem;
-    justify-content: center;
-    margin-left: 7%;
-    margin-bottom: 3rem;
-    
+        
+        gap: 2rem;
+        justify-content: center;
+        margin-left: 7%;
+        margin-bottom: 3rem;
+        max-width: fit-content;
+       
     }
-    .plane-types div{
+
+    .plane-types div {
+
         display: flex;
         flex-direction: column;
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
         justify-content: center;
         align-items: center;
         border: 1px solid #dcdcdc;
-    border-radius: 8px;
-    padding: 1rem;
-    text-align: center;
-    background-color: #ffffff;
-    transition: transform 0.3s, box-shadow 0.3s;
+        border-radius: 8px;
+        padding: 1rem;
+        text-align: center;
+        background-color: #ffffff;
+        transition: transform 0.3s, box-shadow 0.3s;
     }
+
     .plane-types div:hover {
         transform: scale(1.05);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -472,12 +497,60 @@ width: 10%;
     .plane-types img {
         width: 100px;
         height: auto;
+
+    }
+
+    .plane-types h1 {
+        grid-column: span 3;
+        margin: 0 auto;
+    }
+
+    .plane-types h3 {
+        font-weight: 400;
+    }
+.planetypes-slideshow-2{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    
+    
+}
+
+    .slideshow {
+        position: relative;
+        width: 650px;
+        height: 360px;
+        border-radius: 16px;
+        background-color: black;
+    }
+   
+
+    .slideshow img,
+    .slideshow h2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slideshow img {
+        box-shadow: 0 0 20px white;
+        border-radius: 16px;
         
     }
-    .plane-types h1{
-        grid-column:span 3;
-        margin:0 auto;
-    }
-    .plane-types h3{
-        font-weight: 400;
+
+    .slideshow h2 {
+        width: 650px;
+        color: white;
+        font-size: 4rem;
+        text-shadow: 0 0 14px black;
+        background-color: rgba(0, 0, 0, 0.15);
+        border-radius: 16px;
+        
     }
