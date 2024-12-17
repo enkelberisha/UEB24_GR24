@@ -40,8 +40,34 @@ document.addEventListener('DOMContentLoaded', () => {
         slideshowImage.src = images[currentIndex];
     };
 
-   
+
     setInterval(showNextImage, 3000);
 });
 
+var body = document.querySelector("body");
+document.getElementById('log-inOrsign-up').addEventListener('click', function () {
+    document.querySelector('.popup').style.display = 'flex';
+    body.classList.add('body-special');
+})
 
+document.querySelector('.close').addEventListener('click', function () {
+    document.querySelector('.popup').style.display = 'none';
+    body.classList.remove('body-special');
+
+})
+
+var btn_login = document.getElementById("button-login");
+var btn_signup = document.getElementById("button-signup");
+
+var login = document.getElementById("log-in");
+var signup = document.getElementById("sign-up");
+
+btn_login.addEventListener('click', function () {
+    signup.style.display = 'none';
+    login.style.display = 'block';
+
+})
+btn_signup.addEventListener('click', function () {
+    login.style.display = 'none';
+    signup.style.display = 'block';
+})
