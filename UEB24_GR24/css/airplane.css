@@ -63,7 +63,7 @@
     }
 
     nav a:hover {
-        color: blaxck solid;
+        color: #183251;
     }
 
     header {
@@ -381,7 +381,7 @@
         height: auto;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        
+
     }
 
     .text-container-luxury,
@@ -437,9 +437,9 @@
         border-right: 1.5px rgba(0, 0, 0, 0.2) solid;
         border-bottom: 1.5px rgba(0, 0, 0, 0.2) solid;
         border-radius: 10px;
-        
+
     }
-    
+
 
     .text-container-luxury a:hover,
     .text-container-space a:hover {
@@ -467,13 +467,13 @@
     .plane-types {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        
+
         gap: 2rem;
         justify-content: center;
         margin-left: 7%;
         margin-bottom: 3rem;
         max-width: fit-content;
-       
+
     }
 
     .plane-types div {
@@ -490,9 +490,7 @@
         text-align: center;
         background-color: #ffffff;
         transition: transform 0.3s, box-shadow 0.3s;
-        filter: drop-shadow(
-    1px 2px 4px rgb(63, 63, 63)
-)
+        filter: drop-shadow(1px 2px 4px rgb(63, 63, 63))
     }
 
     .plane-types div:hover {
@@ -514,15 +512,16 @@
     .plane-types h3 {
         font-weight: 400;
     }
-.planetypes-slideshow-2{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    
-    
-}
+
+    .planetypes-slideshow-2 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+
+
+    }
 
     .slideshow {
         position: relative;
@@ -531,7 +530,7 @@
         border-radius: 16px;
         background-color: black;
     }
-   
+
 
     .slideshow img,
     .slideshow h2 {
@@ -546,12 +545,9 @@
     }
 
     .slideshow img {
-        
+
         border-radius: 16px;
-        filter: drop-shadow(
-    1px 2px 10px black
-)
-        
+        filter: drop-shadow(1px 2px 10px black)
     }
 
     .slideshow h2 {
@@ -561,5 +557,101 @@
         text-shadow: 0 0 14px black;
         background-color: rgba(0, 0, 0, 0.15);
         border-radius: 16px;
-        
+
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #183251;
+        height: 100px;
+    }
+
+    .footer-div {
+        display: flex;
+        flex-direction: row;
+        align-items: space-between;
+        justify-content: space-between;
+        width: 60%;
+    }
+
+    .f-linqet,
+    .f-logot {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+    }
+
+    .f-linqet {
+        width: 80%;
+    }
+
+    .f-logot {
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .f-link:hover {
+        color: #597F97;
+    }
+
+    .f-link {
+        color: #F1F0E8;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-weight: 600;
+    }
+
+    .im-f-logo {
+        border-radius: 100%;
+        max-width: 31px;
+        max-height: 31px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: fill 0.3s ease;
+
+    }
+
+   
+    .f-logo {
+       border-radius: 100%;
+        width: 31px;
+        height: 31px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: fill 0.3s ease;
+        background-color: #183251;
+    }
+
+    .f-logo :hover {
+        border-radius: 100%;
+        width: 31px;
+        height: 31px;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s ease;
+
+
+    }
+
+    .facebook :hover {
+        background-color: #3b5998;
+    }
+
+    .you-tube :hover {
+        background-color: #ff0000;
+    }
+
+    .instagram :hover {
+        background-color: #e1306c;
+    }
+
+    .X :hover {
+        background-color: #000000;
     }

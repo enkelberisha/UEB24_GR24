@@ -140,3 +140,101 @@ border-radius: 20px;
     font-size: 1rem;
     line-height: 1.8;
 }
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #183251;
+    height: 100px;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.f-linqet,
+.f-logot {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+}
+
+.f-linqet {
+    width: 80%;
+}
+
+.f-logot {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.f-link:hover {
+    color: #597F97;
+}
+
+.f-link {
+    color: #F1F0E8;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 600;
+}
+
+.im-f-logo {
+    border-radius: 100%;
+    max-width: 31px;
+    max-height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: fill 0.3s ease;
+
+}
+
+
+.f-logo {
+   border-radius: 100%;
+    width: 31px;
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: fill 0.3s ease;
+    background-color: #183251;
+}
+
+.f-logo :hover {
+    border-radius: 100%;
+    width: 31px;
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s ease;
+
+
+}
+
+.facebook :hover {
+    background-color: #3b5998;
+}
+
+.you-tube :hover {
+    background-color: #ff0000;
+}
+
+.instagram :hover {
+    background-color: #e1306c;
+}
+
+.X :hover {
+    background-color: #000000;
+}
