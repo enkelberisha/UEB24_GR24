@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerosales</title>
+    <link rel="stylesheet" href="css/recources.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="UEB24_GR24.html">
+                <img src="img/logo and icons/Untitled 2.svg" alt="Site logo " style="width: 15rem;">
+            </a>
+        </div>
+
+        <div class="navigation">
+            <a href="UEB24_GR24.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#resources">Resources</a>
+            <a href="#staff">Staff</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+    </nav>
+
+ <header>
+    <div class="head1">
+        <h3>People We Work With</h3>
+    </div>
+    <hr>
+ </header>
+
+<div class="content-wrapper">
+    <div class="text.container1"> 
+        <h2>Airports</h2>
+                <hr />
+        At Aerosales, we are proud to partner with a vast network of world-class 
+        airports across the globe, connecting travelers to their destinations with ease and efficiency. 
+        Whether it's facilitating faster connections, enhancing passenger comfort, 
+        or supporting sustainable airport operations, our commitment to excellence makes us the trusted
+        choice in global aviation.Wherever you're headed,we're proud to be part of your journey.
+    </div>
+    <div class="slideshow-right">
+        <!-- Slideshow content -->
+        <img src="img/airports/210623180928-dubai-airport.jpg"  class="slideshow-image">
+        <img src="img/airports/Adolfo+Suarez+Madrid-Barajas+Airport+04.jpg"  class="slideshow-image" >
+        <img src="img/airports/Canopy-ATL-illuminated-sky_-copy-900x500.jpg" class="slideshow-image">
+        <img src="img/airports/china airport.jpg" class="slideshow-image" >
+        <img src="img/airports/frankfurt airport.webp"  class="slideshow-image">
+        <img src="img/airports/haneda.jpg"  class="slideshow-image" >
+        <img src="img/airports/Navigating Charles de Gaulle.png"  class="slideshow-image">
+    </div>
+</div>
+
+<script>
+    let currentSlide = 1;
+    const slides = document.querySelectorAll('.slideshow-image');
+
+    function showNextSlide() {
+        slides[currentSlide].style.display = 'none'; 
+        currentSlide = (currentSlide + 1) % slides.length; 
+        slides[currentSlide].style.display = 'block'; 
+    }
+
+    setInterval(showNextSlide, 2000);
+</script>
+
+
+</body>
+
+
+<footer>
+    <div class="footer-div">
+
+        <div class="f-linqet">
+            <a class="about f-link" href="about.html">About</a>
+            <a class="Contact f-link" href="#Contact">Contact</a>
+            <a class="Terms f-link" href="#terms-and-conditions">Terms & Conditions</a>
+            <a class="Privacy f-link" href="#privacy-policy">Privacy Policy</a>
+        </div>
+
+        <div class="f-logot">
+
+            <div class="facebook f-logo">
+                <a target="_blank" href="https://www.facebook.com/">
+                    <img class="im-f-logo" src="img/logo and icons/facebook-svgrepo-com.svg" alt="">
+                </a>
+            </div>
+
+            <div class="instagram f-logo">
+                <a target="_blank" href="https://www.instagram.com/">
+                    <img class="im-f-logo" src="img/logo and icons/instagram-svgrepo-com (3).svg" alt="">
+                </a>
+            </div>
+
+            <div class="X f-logo">
+                <a target="_blank" href="https://x.com/?lang=en">
+                    <img class="im-f-logo" src="img/logo and icons/twitter-x.svg" alt="">
+                </a>
+            </div>
+
+            <div class="you-tube f-logo">
+                <a target="_blank" href="https://www.youtube.com/">
+                    <img class="im-f-logo" src="img/logo and icons/youtube-svgrepo-com (4).svg" alt="">
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+</html>
