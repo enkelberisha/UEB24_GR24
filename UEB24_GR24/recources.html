@@ -26,11 +26,12 @@
 
  <header>
     <div class="head1">
-        <h3>People We Work With</h3>
+        <h3>Recources</h3>
     </div>
     <hr>
  </header>
 
+ <section class="Airports-space">
 <div class="content-wrapper">
     <div class="text.container1"> 
         <h2>Airports</h2>
@@ -41,6 +42,7 @@
         or supporting sustainable airport operations, our commitment to excellence makes us the trusted
         choice in global aviation.Wherever you're headed,we're proud to be part of your journey.
     </div>
+    <div class="slideshow-wrapper">
     <div class="slideshow-right">
         <!-- Slideshow content -->
         <img src="img/airports/210623180928-dubai-airport.jpg"  class="slideshow-image">
@@ -51,7 +53,10 @@
         <img src="img/airports/haneda.jpg"  class="slideshow-image" >
         <img src="img/airports/Navigating Charles de Gaulle.png"  class="slideshow-image">
     </div>
+    </div>
 </div>
+
+
 
 <script>
     let currentSlide = 1;
@@ -65,7 +70,98 @@
 
     setInterval(showNextSlide, 2000);
 </script>
+ </section>
 
+
+<section class="Flights">
+    <title>Live Flight Status</title>
+  <div class="flight-status">
+    <h1>Live Flight Status</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Flight</th>
+          <th>Airline</th>
+          <th>Destination</th>
+          <th>Departure Time</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>AA123</td>
+          <td>American Airlines</td>
+          <td>New York (JFK)</td>
+          <td>12:45 PM</td>
+          <td class="on-time">On Time</td>
+        </tr>
+        <tr>
+          <td>DL456</td>
+          <td>Delta Airlines</td>
+          <td>Atlanta (ATL)</td>
+          <td>1:30 PM</td>
+          <td class="delayed">Delayed</td>
+        </tr>
+        <tr>
+          <td>UA789</td>
+          <td>United Airlines</td>
+          <td>Chicago (ORD)</td>
+          <td>2:15 PM</td>
+          <td class="cancelled">Cancelled</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="Finance">
+    <title>Financing and Leasing</title>
+  
+    <div class="financing-leasing">
+      <h1>Financing and Leasing Options</h1>
+      <div class="tabs">
+        <button class="tab-button active" onclick="openTab(event, 'financing')">Financing</button>
+        <button class="tab-button" onclick="openTab(event, 'leasing')">Leasing</button>
+      </div>
+      <div class="tab-content" id="financing" style="display: block;">
+        <h2>Financing Options</h2>
+        <p>We offer competitive financing plans to make your aircraft purchase easier. Explore options tailored to your needs:</p>
+        <ul>
+          <li>Low-interest rates starting at 3.5% APR.</li>
+          <li>Flexible loan terms up to 20 years.</li>
+          <li>No prepayment penalties.</li>
+          <li>Custom payment schedules to match your income flow.</li>
+        </ul>
+        <p><strong>Requirements:</strong> Financial statements, creditworthiness assessment, and down payment of 10%.</p>
+        <p>For more details, <a href="contact.html">contact us</a> or speak with our financing specialists.</p>
+      </div>
+      <div class="tab-content" id="leasing">
+        <h2>Leasing Options</h2>
+        <p>Leasing is a great way to access high-quality aircraft without a full upfront investment. Our leasing plans include:</p>
+        <ul>
+          <li>Operating leases with flexible terms.</li>
+          <li>Lease-to-own programs available.</li>
+          <li>Minimal upfront costs and predictable monthly payments.</li>
+          <li>Maintenance and support packages included.</li>
+        </ul>
+        <p><strong>Best for:</strong> Charter operators, businesses, or individuals who need short-term aircraft usage.</p>
+        <p>To request a leasing quote, <a href="contact.html">get in touch</a>.</p>
+      </div>
+    </div>
+  
+    <script>
+      function openTab(event, tabId) {
+        const tabs = document.querySelectorAll('.tab-content');
+        const buttons = document.querySelectorAll('.tab-button');
+  
+        tabs.forEach(tab => (tab.style.display = 'none'));
+        buttons.forEach(button => button.classList.remove('active'));
+  
+        document.getElementById(tabId).style.display = 'block';
+        event.currentTarget.classList.add('active');
+      }
+    </script>
+</section>
 
 </body>
 

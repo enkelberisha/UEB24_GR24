@@ -161,16 +161,15 @@ footer {
 
 .text.container1{ 
     width: 50%; 
-    height: auto; 
+    height: 100px; 
     background-color: #f4f4f4; 
     color: #333; 
     padding: 20px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    margin-left: 0; 
+    margin-left: 3rem; 
     margin-right: auto; 
     border: 1px solid #070707; 
     box-sizing: border-box;
-    float: left;
     text-align: left; 
 }
 
@@ -206,7 +205,162 @@ footer {
     max-width: 400px; 
     height: 320px;
     display: none;
-    border-radius: 15%;
     overflow: visible;
+    object-fit: cover;
+    position: absolute;
 }
 
+.Airports-space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.slideshow-wrapper{
+  width: 500px;
+  height: 300px; 
+  border-radius: 15%; 
+  position: relative;
+  overflow: hidden;
+}
+
+.flight-status {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .flight-status h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    text-align: left;
+    padding: 12px 15px;
+  }
+  
+  table th {
+    background: rgba(64, 92, 110, 0.91);;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  table tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  table tr:hover {
+    background: #f1f1f1;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .on-time {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .delayed {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .cancelled {
+    color: red;
+    font-weight: bold;
+  }
+
+  .financing-leasing {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .financing-leasing h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    background: rgba(64, 92, 110, 0.91);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background 0.3s;
+  }
+  
+  .tab-button:hover {
+    background: rgba(64, 92, 110, 0.91);
+  }
+  
+  .tab-button.active {
+    background: rgba(64, 92, 110, 0.91);
+    font-weight: bold;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content h2 {
+    color: rgba(64, 92, 110, 0.91);
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .tab-content p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .tab-content ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .tab-content li {
+    margin-bottom: 8px;
+  }
+  
+  .tab-content a {
+    color: rgba(64, 92, 110, 0.91);;
+    text-decoration: none;
+  }
+  
+  .tab-content a:hover {
+    text-decoration: underline;
+  }
