@@ -163,6 +163,87 @@
     </script>
 </section>
 
+<section class="Maintenance">
+    
+    <title>Maintenance and Support</title>
+
+  <div class="maintenance-support">
+    <h1>Maintenance and Support</h1>
+    <p>We offer world-class maintenance and support services to keep your aircraft in top condition. Explore our services below:</p>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header">Scheduled Maintenance</button>
+        <div class="accordion-content">
+          <p>Ensure your aircraft stays in compliance with regulatory standards. Our scheduled maintenance packages include:</p>
+          <ul>
+            <li>Routine inspections and servicing</li>
+            <li>Compliance with FAA/EASA guidelines</li>
+            <li>Parts replacement and performance tuning</li>
+          </ul>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">On-Demand Repairs</button>
+        <div class="accordion-content">
+          <p>Our repair services are available 24/7 to address any unexpected issues. Services include:</p>
+          <ul>
+            <li>Engine diagnostics and repairs</li>
+            <li>Avionics troubleshooting</li>
+            <li>Structural damage repair</li>
+          </ul>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Upgrades and Customization</button>
+        <div class="accordion-content">
+          <p>Enhance your aircraft with the latest upgrades and features:</p>
+          <ul>
+            <li>Cabin interior redesign</li>
+            <li>Avionics system upgrades</li>
+            <li>Performance and safety enhancements</li>
+          </ul>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Global Support Network</button>
+        <div class="accordion-content">
+          <p>Access support anytime, anywhere through our global network:</p>
+          <ul>
+            <li>Over 100 certified maintenance centers worldwide</li>
+            <li>Remote technical support via our mobile app</li>
+            <li>Dedicated account managers for VIP clients</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const headers = document.querySelectorAll(".accordion-header");
+
+    headers.forEach(header => {
+      header.addEventListener("click", () => {
+        const content = header.nextElementSibling;
+        const allContents = document.querySelectorAll(".accordion-content");
+
+        // Close all other accordion items
+        allContents.forEach(c => {
+          if (c !== content) {
+            c.style.maxHeight = null;
+          }
+        });
+
+        // Toggle current content
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+</section>
+
 </body>
 
 

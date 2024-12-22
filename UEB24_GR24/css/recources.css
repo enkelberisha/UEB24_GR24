@@ -254,7 +254,7 @@ footer {
   }
   
   table th {
-    background: rgba(64, 92, 110, 0.91);;
+    background: rgba(64, 92, 110, 0.91);
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -363,4 +363,81 @@ footer {
   
   .tab-content a:hover {
     text-decoration: underline;
+  }
+
+  .maintenance-support {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .maintenance-support h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .maintenance-support p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .accordion {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .accordion-item:last-child {
+    border-bottom: none;
+  }
+  
+  .accordion-header {
+    width: 100%;
+    background: rgba(64, 92, 110, 0.91);
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .accordion-header:hover {
+    background: rgba(64, 92, 110, 0.91);
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: #f9f9f9;
+    padding: 0 20px;
+  }
+  
+  .accordion-content p,
+  .accordion-content ul {
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .accordion-content ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .accordion-content li {
+    margin-bottom: 8px;
   }
