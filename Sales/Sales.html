@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aerosales</title>
     <link rel="stylesheet" href="../UEB24_GR24/css/sales.css">
+    <link rel="stylesheet" href="../UEB24_GR24/css/nav_footer.css">
 </head>
 
 <body>
-    <nav>
+    <nav style=" background: rgba(89, 127, 151, 0.91);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
         <div class="logo">
             <a href="../UEB24_GR24/UEB24_GR24.html">
                 <img src="../UEB24_GR24/img/logo and icons/Untitled 2.svg" alt="Site logo " style="width: 15rem;">
@@ -18,12 +20,36 @@
         <div class="navigation">
             <a href="../UEB24_GR24/UEB24_GR24.html">Home</a>
             <a href="../UEB24_GR24/about.html">About</a>
-            <a href="#resources">Resources</a>
+            <a href="../UEB24_GR24/recources.html">Resources</a>
             <a href="#staff">Staff</a>
             <a href="#contact">Contact</a>
+            <a href="#log-in" id="log-inOrsign-up">Log in/Sign up</a>
 
         </div>
     </nav>
+    
+
+    <div class="popup">
+        <img class="close" src="../UEB24_GR24/img/logo and icons/close-circle-svgrepo-com.svg" alt="close">
+
+        <div class="container">
+
+            <div class="buttons">
+                <button class="button-login" id="button-login">Log In</button>
+                <button class="button-signup" id="button-signup">Sign Up</button>
+            </div>
+
+            <div class="permbajtja">
+                <div class="log-in" id="log-in">
+
+                </div>
+                <div class="sign-up" id="sign-up">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <section class="jet-desc" style="margin-top: 6rem;">
         <div class="jet-desc-image">
@@ -113,8 +139,9 @@
         </div>
     </footer>
 
-    <script src="../UEB24_GR24/script.js"></script>
-    <script src="../UEB24_GR24/Sales.js"></script>
+    <script src="../UEB24_GR24/js/script.js"></script>
+    <script src="../UEB24_GR24/js/Sales.js"></script>
+   
 </body>
 
 </html>

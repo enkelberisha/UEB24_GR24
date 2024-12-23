@@ -1,122 +1,155 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aerosales</title>
-    <link rel="stylesheet" href="css/recources.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aerosales</title>
+  <link rel="stylesheet" href="css/recources.css">
+  <link rel="stylesheet" href="css/nav_footer.css">
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <a href="UEB24_GR24.html">
-                <img src="img/logo and icons/Untitled 2.svg" alt="Site logo " style="width: 15rem;">
-            </a>
-        </div>
 
-        <div class="navigation">
-            <a href="UEB24_GR24.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="#resources">Resources</a>
-            <a href="#staff">Staff</a>
-            <a href="#contact">Contact</a>
+  <!-- temporarily -->
 
-        </div>
-    </nav>
+  <nav style=" background: rgba(89, 127, 151, 0.91);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+   
+   <!-- temporarily -->
+   
+   <div class="logo">
+          <a href="UEB24_GR24.html">
+              <img src="img/logo and icons/Untitled 2.svg" alt="Site logo " style="width: 15rem;">
+          </a>
+      </div>
+      <div class="navigation">
+          <a href="UEB24_GR24.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="recources.html">Resources</a>
+          <a href="#staff">Staff</a>
+          <a href="#contact">Contact</a>
+          <a href="#log-in" id="log-inOrsign-up">Log in/Sign up</a>
 
- <header>
+      </div>
+  </nav>
+
+
+  <div class="popup">
+      <img class="close" src="img/logo and icons/close-circle-svgrepo-com.svg" alt="close">
+
+      <div class="container">
+
+          <div class="buttons">
+              <button class="button-login" id="button-login">Log In</button>
+              <button class="button-signup" id="button-signup">Sign Up</button>
+          </div>
+
+          <div class="permbajtja">
+              <div class="log-in" id="log-in">
+
+              </div>
+              <div class="sign-up" id="sign-up">
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <header>
     <div class="head1">
-        <h3>Recources</h3>
+      <h3>Recources</h3>
     </div>
     <hr>
- </header>
+  </header>
 
- <section class="Airports-space">
-<div class="content-wrapper">
-    <div class="text.container1"> 
+  <section class="Airports-space">
+    <div class="content-wrapper">
+      <div class="text.container1">
         <h2>Airports</h2>
-                <hr />
-        At Aerosales, we are proud to partner with a vast network of world-class 
-        airports across the globe, connecting travelers to their destinations with ease and efficiency. 
-        Whether it's facilitating faster connections, enhancing passenger comfort, 
+        <hr />
+        At Aerosales, we are proud to partner with a vast network of world-class
+        airports across the globe, connecting travelers to their destinations with ease and efficiency.
+        Whether it's facilitating faster connections, enhancing passenger comfort,
         or supporting sustainable airport operations, our commitment to excellence makes us the trusted
         choice in global aviation.Wherever you're headed,we're proud to be part of your journey.
+      </div>
+      <div class="slideshow-wrapper">
+        <div class="slideshow-right">
+          <!-- Slideshow content -->
+          <img src="img/airports/210623180928-dubai-airport.jpg" class="slideshow-image">
+          <img src="img/airports/Adolfo+Suarez+Madrid-Barajas+Airport+04.jpg" class="slideshow-image">
+          <img src="img/airports/Canopy-ATL-illuminated-sky_-copy-900x500.jpg" class="slideshow-image">
+          <img src="img/airports/china airport.jpg" class="slideshow-image">
+          <img src="img/airports/frankfurt airport.webp" class="slideshow-image">
+          <img src="img/airports/haneda.jpg" class="slideshow-image">
+          <img src="img/airports/Navigating Charles de Gaulle.png" class="slideshow-image">
+        </div>
+      </div>
     </div>
-    <div class="slideshow-wrapper">
-    <div class="slideshow-right">
-        <!-- Slideshow content -->
-        <img src="img/airports/210623180928-dubai-airport.jpg"  class="slideshow-image">
-        <img src="img/airports/Adolfo+Suarez+Madrid-Barajas+Airport+04.jpg"  class="slideshow-image" >
-        <img src="img/airports/Canopy-ATL-illuminated-sky_-copy-900x500.jpg" class="slideshow-image">
-        <img src="img/airports/china airport.jpg" class="slideshow-image" >
-        <img src="img/airports/frankfurt airport.webp"  class="slideshow-image">
-        <img src="img/airports/haneda.jpg"  class="slideshow-image" >
-        <img src="img/airports/Navigating Charles de Gaulle.png"  class="slideshow-image">
-    </div>
-    </div>
-</div>
 
 
 
-<script>
-    let currentSlide = 1;
-    const slides = document.querySelectorAll('.slideshow-image');
+    <!-- <script>
+      // let currentSlide = 1;
+      // const slides = document.querySelectorAll('.slideshow-image');
 
-    function showNextSlide() {
-        slides[currentSlide].style.display = 'none'; 
-        currentSlide = (currentSlide + 1) % slides.length; 
-        slides[currentSlide].style.display = 'block'; 
-    }
+      // function showNextSlide() {
+      //   slides[currentSlide].style.display = 'none';
+      //   currentSlide = (currentSlide + 1) % slides.length;
+      //   slides[currentSlide].style.display = 'block';
+      // }
 
-    setInterval(showNextSlide, 2000);
-</script>
- </section>
+      // setInterval(showNextSlide, 2000);
+    </script> -->
+  </section>
 
 
-<section class="Flights">
+  <section class="Flights">
     <title>Live Flight Status</title>
-  <div class="flight-status">
-    <h1>Live Flight Status</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Flight</th>
-          <th>Airline</th>
-          <th>Destination</th>
-          <th>Departure Time</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>AA123</td>
-          <td>American Airlines</td>
-          <td>New York (JFK)</td>
-          <td>12:45 PM</td>
-          <td class="on-time">On Time</td>
-        </tr>
-        <tr>
-          <td>DL456</td>
-          <td>Delta Airlines</td>
-          <td>Atlanta (ATL)</td>
-          <td>1:30 PM</td>
-          <td class="delayed">Delayed</td>
-        </tr>
-        <tr>
-          <td>UA789</td>
-          <td>United Airlines</td>
-          <td>Chicago (ORD)</td>
-          <td>2:15 PM</td>
-          <td class="cancelled">Cancelled</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
+    <div class="flight-status">
+      <h1>Live Flight Status</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Flight</th>
+            <th>Airline</th>
+            <th>Destination</th>
+            <th>Departure Time</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>AA123</td>
+            <td>American Airlines</td>
+            <td>New York (JFK)</td>
+            <td>12:45 PM</td>
+            <td class="on-time">On Time</td>
+          </tr>
+          <tr>
+            <td>DL456</td>
+            <td>Delta Airlines</td>
+            <td>Atlanta (ATL)</td>
+            <td>1:30 PM</td>
+            <td class="delayed">Delayed</td>
+          </tr>
+          <tr>
+            <td>UA789</td>
+            <td>United Airlines</td>
+            <td>Chicago (ORD)</td>
+            <td>2:15 PM</td>
+            <td class="cancelled">Cancelled</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-<section class="Finance">
+  <section class="Finance">
     <title>Financing and Leasing</title>
-  
+
     <div class="financing-leasing">
       <h1>Financing and Leasing Options</h1>
       <div class="tabs">
@@ -125,167 +158,172 @@
       </div>
       <div class="tab-content" id="financing" style="display: block;">
         <h2>Financing Options</h2>
-        <p>We offer competitive financing plans to make your aircraft purchase easier. Explore options tailored to your needs:</p>
+        <p>We offer competitive financing plans to make your aircraft purchase easier. Explore options tailored to your
+          needs:</p>
         <ul>
           <li>Low-interest rates starting at 3.5% APR.</li>
           <li>Flexible loan terms up to 20 years.</li>
           <li>No prepayment penalties.</li>
           <li>Custom payment schedules to match your income flow.</li>
         </ul>
-        <p><strong>Requirements:</strong> Financial statements, creditworthiness assessment, and down payment of 10%.</p>
+        <p><strong>Requirements:</strong> Financial statements, creditworthiness assessment, and down payment of 10%.
+        </p>
         <p>For more details, <a href="contact.html">contact us</a> or speak with our financing specialists.</p>
       </div>
       <div class="tab-content" id="leasing">
         <h2>Leasing Options</h2>
-        <p>Leasing is a great way to access high-quality aircraft without a full upfront investment. Our leasing plans include:</p>
+        <p>Leasing is a great way to access high-quality aircraft without a full upfront investment. Our leasing plans
+          include:</p>
         <ul>
           <li>Operating leases with flexible terms.</li>
           <li>Lease-to-own programs available.</li>
           <li>Minimal upfront costs and predictable monthly payments.</li>
           <li>Maintenance and support packages included.</li>
         </ul>
-        <p><strong>Best for:</strong> Charter operators, businesses, or individuals who need short-term aircraft usage.</p>
+        <p><strong>Best for:</strong> Charter operators, businesses, or individuals who need short-term aircraft usage.
+        </p>
         <p>To request a leasing quote, <a href="contact.html">get in touch</a>.</p>
       </div>
     </div>
-  
+    <!-- 
     <script>
       function openTab(event, tabId) {
         const tabs = document.querySelectorAll('.tab-content');
         const buttons = document.querySelectorAll('.tab-button');
-  
+
         tabs.forEach(tab => (tab.style.display = 'none'));
         buttons.forEach(button => button.classList.remove('active'));
-  
+
         document.getElementById(tabId).style.display = 'block';
         event.currentTarget.classList.add('active');
       }
-    </script>
-</section>
+    </script> -->
+  </section>
 
-<section class="Maintenance">
-    
+  <section class="Maintenance">
+
     <title>Maintenance and Support</title>
 
-  <div class="maintenance-support">
-    <h1>Maintenance and Support</h1>
-    <p>We offer world-class maintenance and support services to keep your aircraft in top condition. Explore our services below:</p>
-    <div class="accordion">
-      <div class="accordion-item">
-        <button class="accordion-header">Scheduled Maintenance</button>
-        <div class="accordion-content">
-          <p>Ensure your aircraft stays in compliance with regulatory standards. Our scheduled maintenance packages include:</p>
-          <ul>
-            <li>Routine inspections and servicing</li>
-            <li>Compliance with FAA/EASA guidelines</li>
-            <li>Parts replacement and performance tuning</li>
-          </ul>
+    <div class="maintenance-support">
+      <h1>Maintenance and Support</h1>
+      <p>We offer world-class maintenance and support services to keep your aircraft in top condition. Explore our
+        services below:</p>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">Scheduled Maintenance</button>
+          <div class="accordion-content">
+            <p>Ensure your aircraft stays in compliance with regulatory standards. Our scheduled maintenance packages
+              include:</p>
+            <ul>
+              <li>Routine inspections and servicing</li>
+              <li>Compliance with FAA/EASA guidelines</li>
+              <li>Parts replacement and performance tuning</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">On-Demand Repairs</button>
-        <div class="accordion-content">
-          <p>Our repair services are available 24/7 to address any unexpected issues. Services include:</p>
-          <ul>
-            <li>Engine diagnostics and repairs</li>
-            <li>Avionics troubleshooting</li>
-            <li>Structural damage repair</li>
-          </ul>
+        <div class="accordion-item">
+          <button class="accordion-header">On-Demand Repairs</button>
+          <div class="accordion-content">
+            <p>Our repair services are available 24/7 to address any unexpected issues. Services include:</p>
+            <ul>
+              <li>Engine diagnostics and repairs</li>
+              <li>Avionics troubleshooting</li>
+              <li>Structural damage repair</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">Upgrades and Customization</button>
-        <div class="accordion-content">
-          <p>Enhance your aircraft with the latest upgrades and features:</p>
-          <ul>
-            <li>Cabin interior redesign</li>
-            <li>Avionics system upgrades</li>
-            <li>Performance and safety enhancements</li>
-          </ul>
+        <div class="accordion-item">
+          <button class="accordion-header">Upgrades and Customization</button>
+          <div class="accordion-content">
+            <p>Enhance your aircraft with the latest upgrades and features:</p>
+            <ul>
+              <li>Cabin interior redesign</li>
+              <li>Avionics system upgrades</li>
+              <li>Performance and safety enhancements</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">Global Support Network</button>
-        <div class="accordion-content">
-          <p>Access support anytime, anywhere through our global network:</p>
-          <ul>
-            <li>Over 100 certified maintenance centers worldwide</li>
-            <li>Remote technical support via our mobile app</li>
-            <li>Dedicated account managers for VIP clients</li>
-          </ul>
+        <div class="accordion-item">
+          <button class="accordion-header">Global Support Network</button>
+          <div class="accordion-content">
+            <p>Access support anytime, anywhere through our global network:</p>
+            <ul>
+              <li>Over 100 certified maintenance centers worldwide</li>
+              <li>Remote technical support via our mobile app</li>
+              <li>Dedicated account managers for VIP clients</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    <!-- 
+    <script>
+      const headers = document.querySelectorAll(".accordion-header");
 
-  <script>
-    const headers = document.querySelectorAll(".accordion-header");
+      headers.forEach(header => {
+        header.addEventListener("click", () => {
+          const content = header.nextElementSibling;
+          const allContents = document.querySelectorAll(".accordion-content");
 
-    headers.forEach(header => {
-      header.addEventListener("click", () => {
-        const content = header.nextElementSibling;
-        const allContents = document.querySelectorAll(".accordion-content");
+          // Close all other accordion items
+          allContents.forEach(c => {
+            if (c !== content) {
+              c.style.maxHeight = null;
+            }
+          });
 
-        // Close all other accordion items
-        allContents.forEach(c => {
-          if (c !== content) {
-            c.style.maxHeight = null;
+          // Toggle current content
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
           }
         });
-
-        // Toggle current content
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
       });
-    });
-  </script>
-</section>
+    </script> -->
+  </section>
 
-</body>
-
-
-<footer>
+  <footer>
     <div class="footer-div">
 
-        <div class="f-linqet">
-            <a class="about f-link" href="about.html">About</a>
-            <a class="Contact f-link" href="#Contact">Contact</a>
-            <a class="Terms f-link" href="#terms-and-conditions">Terms & Conditions</a>
-            <a class="Privacy f-link" href="#privacy-policy">Privacy Policy</a>
+      <div class="f-linqet">
+        <a class="about f-link" href="about.html">About</a>
+        <a class="Contact f-link" href="#Contact">Contact</a>
+        <a class="Terms f-link" href="#terms-and-conditions">Terms & Conditions</a>
+        <a class="Privacy f-link" href="#privacy-policy">Privacy Policy</a>
+      </div>
+      <div class="f-logot">
+
+        <div class="facebook f-logo">
+          <a target="_blank" href="https://www.facebook.com/">
+            <img class="im-f-logo" src="img/logo and icons/facebook-svgrepo-com.svg" alt="">
+          </a>
         </div>
 
-        <div class="f-logot">
-
-            <div class="facebook f-logo">
-                <a target="_blank" href="https://www.facebook.com/">
-                    <img class="im-f-logo" src="img/logo and icons/facebook-svgrepo-com.svg" alt="">
-                </a>
-            </div>
-
-            <div class="instagram f-logo">
-                <a target="_blank" href="https://www.instagram.com/">
-                    <img class="im-f-logo" src="img/logo and icons/instagram-svgrepo-com (3).svg" alt="">
-                </a>
-            </div>
-
-            <div class="X f-logo">
-                <a target="_blank" href="https://x.com/?lang=en">
-                    <img class="im-f-logo" src="img/logo and icons/twitter-x.svg" alt="">
-                </a>
-            </div>
-
-            <div class="you-tube f-logo">
-                <a target="_blank" href="https://www.youtube.com/">
-                    <img class="im-f-logo" src="img/logo and icons/youtube-svgrepo-com (4).svg" alt="">
-                </a>
-            </div>
-
+        <div class="instagram f-logo">
+          <a target="_blank" href="https://www.instagram.com/">
+            <img class="im-f-logo" src="img/logo and icons/instagram-svgrepo-com (3).svg" alt="">
+          </a>
         </div>
+
+        <div class="X f-logo">
+          <a target="_blank" href="https://x.com/?lang=en">
+            <img class="im-f-logo" src="img/logo and icons/twitter-x.svg" alt="">
+          </a>
+        </div>
+
+        <div class="you-tube f-logo">
+          <a target="_blank" href="https://www.youtube.com/">
+            <img class="im-f-logo" src="img/logo and icons/youtube-svgrepo-com (4).svg" alt="">
+          </a>
+        </div>
+
+      </div>
 
     </div>
-</footer>
+  </footer>
+  <script type="text/javascript" src="nav_footer.js"></script>
+  <script type="text/javascript" src="js/recources.js"></script>
+</body>
 
 </html>
