@@ -10,147 +10,18 @@ body {
     font-size: 18px;
 }
 
-nav {
-    position: fixed;
-    display: flex;
-    top: 0;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    z-index: 1000;
-    background: rgba(89, 127, 151, 0.91);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
-    
-}
-
-nav a {
-    color: #f1f0e8;
-    text-decoration: none;
-    margin: 0 1rem;
-    font-size: 1rem;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #183251;
-}
-
-.navigation {
-    display: flex;
-    padding-right: 2rem;
-
-
-}
 header {
-    background-size: cover;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    padding: 0 20px 50px;
-    height: 350px;
-    position: relative;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 0 20px 50px;
+  height: 350px;
+  position: relative;
 }
-
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #183251;
-    height: 100px;
-   
-}
-
-.footer-div {
-    display: flex;
-    flex-direction: row;
-    align-items: space-between;
-    justify-content: space-between;
-    width: 60%;
-}
-
-.f-logot {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-
-}
-
-.f-linqet {
-    width: 80%;
-}
-
-.f-logot {
-    width: 20%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.f-link:hover {
-    color: #597F97;
-}
-
-.f-link {
-    color: #F1F0E8;
-    text-decoration: none;
-    transition: color 0.3s;
-    font-weight: 600;
-}
-
-.im-f-logo {
-    border-radius: 100%;
-    max-width: 31px;
-    max-height: 31px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: fill 0.3s ease;
-
-}
-
-
-.f-logo {
-   border-radius: 100%;
-    width: 31px;
-    height: 31px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: fill 0.3s ease;
-    background-color: #183251;
-}
-
-.f-logo :hover {
-    border-radius: 100%;
-    width: 31px;
-    height: 31px;
-    display: flex;
-    justify-content: center;
-    transition: 0.3s ease;
-
-
-}
-
-.facebook :hover {
-    background-color: #3b5998;
-}
-
-.you-tube :hover {
-    background-color: #ff0000;
-}
-
-.instagram :hover {
-    background-color: #e1306c;
-}
-
-.X :hover {
-    background-color: #000000;
-}
-
 .head1{
     color: #000000; 
     display:flex;

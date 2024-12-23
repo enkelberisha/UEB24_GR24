@@ -1,8 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+
 }
-html{
+
+html {
     font-family: Cascadia Mono;
     font-size: 18px;
 
@@ -12,19 +14,30 @@ body {
     background-color: #f1f0e9;
 }
 
+.body-special {
+    overflow: hidden;
+}
+
+
+
+
 nav {
     position: fixed;
     display: flex;
     top: 0;
     width: 100%;
+    background: none;
+
+    color: white;
+
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     z-index: 1000;
-    background: rgba(89, 127, 151, 0.91);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
     transition: background-color 0.3s ease;
-    color: white;
+
+
 
 
 }
@@ -36,11 +49,17 @@ nav {
 
 }
 
+nav.scrolled {
+    background: rgba(89, 127, 151, 0.91);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 nav a {
-    color: #f1f0e8;
+    color: #F1F0E8;
     text-decoration: none;
     margin: 0 1rem;
     font-size: 1rem;
+
     transition: color 0.3s;
     font-weight: 600;
 }
@@ -49,114 +68,106 @@ nav a:hover {
     color: #183251;
 }
 
-/* ////////////////////////////////// */
-
-.jet-desc {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: rgba(89, 127, 151, 0.91) solid 2px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(89, 127, 151, 0.91);
-    width: 80%;
-    
-    margin: 0 auto;
-    overflow: hidden;
-    background-color: #f9f9f9;
-    color: #3b5998;
-}
-
-.jet-desc-image {
 
 
-    display: flex;
-    flex-direction: column;
+.popup {
 
-    align-items: center;
-
-
-}
-
-.topimage {
-    margin: 4rem;
-    filter: drop-shadow(1px 2px 10px white);
-    width: 500px;
-    height: 281px;
-    overflow: hidden;
-    position: relative;
-}
-
-#mainImage {
-
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-/* .bottomimages {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
-    margin-bottom: 1rem;
-} */
-
-.bottomimages {
-    display: flex;
-    flex-direction: row;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
     justify-content: center;
     align-items: center;
-
-    border-radius: 20px;
-    overflow: hidden;
+    z-index: 1000;
 }
 
-.bottomimages img {
-    width: 200px;
-    height: 100px;
-    
+.close {
+    position: absolute;
+    margin-left: 95%;
+    margin-top: -43%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+
 }
 
-.data {
-    margin: 1rem;
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    width: 450px;
+    height: 600px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+
 }
 
-.data h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px 10px 0 0;
 }
 
-.data h2 {
-    font-size: 1.5rem;
-    color: #183251;
-    margin-bottom: 15px;
+.button-login {
+    height: 40px;
+    width: 225px;
+    border-radius: 10px 5px 0 0;
+    border: none;
+    background-color: rgb(89, 127, 151);
+    cursor: pointer;
 }
 
-.highlights {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
+.button-login:hover {
+    background-color: rgba(89, 127, 151, 0.9);
 }
 
-.data ul {
-    list-style-type: none;
-    margin-bottom: 20px;
+.button-signup:hover {
+    background-color: rgba(89, 127, 151, 0.9);
 }
 
-.data ul li {
-    font-size: 1rem;
-    margin-bottom: 10px;
+.button-signup {
+    height: 40px;
+    width: 225px;
+    border-radius: 5px 10px 0 0;
+    border: none;
+    background-color: rgb(89, 127, 151);
+    cursor: pointer;
 }
 
-.data ul li strong {
-    color: #183251;
+.permbajtja {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
 }
 
-.data p {
-    font-size: 1rem;
-    line-height: 1.8;
+.log-in {
+    width: 100%;
+    height: auto;
+    background-color: #e1306c;
+    display: block;
 }
+
+.sign-up {
+
+    width: 100%;
+    height: auto;
+    background-color: #ff0000;
+    display: none;
+
+} 
+
+
 
 
 footer {
