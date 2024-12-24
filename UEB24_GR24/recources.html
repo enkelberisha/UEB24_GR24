@@ -7,6 +7,8 @@
   <title>Aerosales</title>
   <link rel="stylesheet" href="css/recources.css">
   <link rel="stylesheet" href="css/nav_footer.css">
+  <link rel="stylesheet" href="footer/footer.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -232,45 +234,12 @@
     
   </section>
 
-  <footer>
-    <div class="footer-div">
 
-      <div class="f-linqet">
-        <a class="about f-link" href="about.html">About</a>
-        <a class="Contact f-link" href="#Contact">Contact</a>
-        <a class="Terms f-link" href="#terms-and-conditions">Terms & Conditions</a>
-        <a class="Privacy f-link" href="#privacy-policy">Privacy Policy</a>
-      </div>
-      <div class="f-logot">
-
-        <div class="facebook f-logo">
-          <a target="_blank" href="https://www.facebook.com/">
-            <img class="im-f-logo" src="img/logo and icons/facebook-svgrepo-com.svg" alt="">
-          </a>
-        </div>
-
-        <div class="instagram f-logo">
-          <a target="_blank" href="https://www.instagram.com/">
-            <img class="im-f-logo" src="img/logo and icons/instagram-svgrepo-com (3).svg" alt="">
-          </a>
-        </div>
-
-        <div class="X f-logo">
-          <a target="_blank" href="https://x.com/?lang=en">
-            <img class="im-f-logo" src="img/logo and icons/twitter-x.svg" alt="">
-          </a>
-        </div>
-
-        <div class="you-tube f-logo">
-          <a target="_blank" href="https://www.youtube.com/">
-            <img class="im-f-logo" src="img/logo and icons/youtube-svgrepo-com (4).svg" alt="">
-          </a>
-        </div>
-
-      </div>
-
-    </div>
-  </footer>
+  <div id="footer"></div>
+    
+  <script type="text/javascript">
+      $('#footer').load('footer/footer.html');
+  </script>
   <script type="text/javascript" src="nav_footer.js"></script>
   <script type="text/javascript" src="js/recources.js"></script>
 </body>
