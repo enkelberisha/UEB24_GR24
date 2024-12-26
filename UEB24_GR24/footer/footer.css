@@ -36,7 +36,7 @@ footer{
     transition: color 0.3s;
 }
 
-i{
+.fa-brands {
     font-size: 25px;
     color: #F1F0E8;
 }
