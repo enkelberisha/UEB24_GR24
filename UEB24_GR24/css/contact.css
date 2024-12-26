@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #f1f0e9;
+    font-family: Cascadia Mono, sans-serif;
+    font-size: 18px;
+}
+
+
+header {
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 0 20px 50px;
+  height: 350px;
+  position: relative;
+}
+
+.hero {
+    position: relative;
+    z-index: 1;
+    margin-top: -2rem;
+}
+
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
