@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/recources.css">
   <link rel="stylesheet" href="css/nav_footer.css">
   <link rel="stylesheet" href="footer/footer.css">
+  <link rel="stylesheet" href="member/popup.css">
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -17,53 +19,59 @@
 
   <nav style=" background: rgba(89, 127, 151, 0.91);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
-   
-   <!-- temporarily -->
-   
-   <div class="logo">
-          <a href="UEB24_GR24.html">
-              <img src="img/logo and icons/Untitled 2.svg" alt="Site logo " style="width: 15rem;">
-          </a>
-      </div>
-      <div class="navigation">
-          <a href="UEB24_GR24.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="recources.html">Resources</a>
-          <a href="staff.html">Staff</a>
-          <a href="#contact">Contact</a>
-          <a href="#log-in" id="log-inOrsign-up">Log in/Sign up</a>
 
-      </div>
+    <!-- temporarily -->
+
+    <div class="logo">
+      <a href="UEB24_GR24.html">
+        <img src="img/logo and icons/Untitled 2.svg" alt="Site logo " style="width: 15rem;">
+      </a>
+    </div>
+    <div class="navigation">
+      <a href="UEB24_GR24.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="recources.html">Resources</a>
+      <a href="staff.html">Staff</a>
+      <a href="#contact">Contact</a>
+      <a href="#log-in" id="log-inOrsign-up">Log in/Sign up</a>
+
+    </div>
   </nav>
+
+
+  <div id="popup">
+
+
+  </div>
 
   <header>
     <div class="hero">
       <hgroup>
-          <h1>Find Recources</h1>
-          <p style="padding-top: 1rem;font-weight: 700;">Everything You Need To Know</p>
+        <h1>Find Recources</h1>
+        <p style="padding-top: 1rem;font-weight: 700;">Everything You Need To Know</p>
       </hgroup>
   </header>
 
 
   <div class="popup">
-      <img class="close" src="img/logo and icons/close-circle-svgrepo-com.svg" alt="close">
+    <img class="close" src="img/logo and icons/close-circle-svgrepo-com.svg" alt="close">
 
-      <div class="container">
+    <div class="container">
 
-          <div class="buttons">
-              <button class="button-login" id="button-login">Log In</button>
-              <button class="button-signup" id="button-signup">Sign Up</button>
-          </div>
-
-          <div class="permbajtja">
-              <div class="log-in" id="log-in">
-
-              </div>
-              <div class="sign-up" id="sign-up">
-
-              </div>
-          </div>
+      <div class="buttons">
+        <button class="button-login" id="button-login">Log In</button>
+        <button class="button-signup" id="button-signup">Sign Up</button>
       </div>
+
+      <div class="permbajtja">
+        <div class="log-in" id="log-in">
+
+        </div>
+        <div class="sign-up" id="sign-up">
+
+        </div>
+      </div>
+    </div>
   </div>
 
   <section class="Airports-space">
@@ -172,7 +180,7 @@
         <p>To request a leasing quote, <a href="contact.html">get in touch</a>.</p>
       </div>
     </div>
-    
+
   </section>
 
   <section class="Maintenance">
@@ -231,17 +239,24 @@
         </div>
       </div>
     </div>
-    
+
   </section>
 
 
   <div id="footer"></div>
-    
+
   <script type="text/javascript">
-      $('#footer').load('footer/footer.html');
+    $('#footer').load('footer/footer.html');
   </script>
-  <script type="text/javascript" src="nav_footer.js"></script>
+
+  <script type="text/javascript">
+    $('#popup').load('Member/popup.html');
+  </script>
+
+
   <script type="text/javascript" src="js/recources.js"></script>
+  <script type="text/javascript" src="js/nav_footer.js"></script>
+  <script type="text/javascript" src="js/popup.js"></script>
 </body>
 
 </html>
