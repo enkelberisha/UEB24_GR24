@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 document.addEventListener("DOMContentLoaded", function () {
     var body = document.querySelector("body");
 
@@ -13,9 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
             body.classList.add('body-special');
         });
     }
-=======
-type="text/javascript";
->>>>>>> origin/commit-page-/-listings-update
 
     // Ensure the '.close' element exists before adding event listener
     const closeBtn = document.querySelector('.close');
