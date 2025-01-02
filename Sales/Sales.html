@@ -5,12 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aerosales</title>
-    <link rel="stylesheet" href="../UEB24_GR24/css/sales.css">
+    <link rel="stylesheet" href="../UEB24_GR24/css/airplane.css">
+    <link rel="stylesheet" href="../UEB24_GR24/footer/footer.css">
     <link rel="stylesheet" href="../UEB24_GR24/css/nav_footer.css">
+    <link rel="stylesheet" href="../UEB24_GR24/member/popup.css">
+    <link rel="stylesheet" href="../UEB24_GR24/css/sales.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
+
 <body>
-    <nav style=" background: rgba(89, 127, 151, 0.91);
+    <nav style=" background: rgb(27, 27, 27);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
         <div class="logo">
             <a href="../UEB24_GR24/UEB24_GR24.html">
@@ -21,46 +30,33 @@
             <a href="../UEB24_GR24/UEB24_GR24.html">Home</a>
             <a href="../UEB24_GR24/about.html">About</a>
             <a href="../UEB24_GR24/recources.html">Resources</a>
-            <a href="#staff">Staff</a>
-            <a href="#contact">Contact</a>
+            <a href="../UEB24_GR24/staff.html">Staff</a>
+            <a href="../UEB24_GR24/contact.html">Contact</a>
             <a href="#log-in" id="log-inOrsign-up">Log in/Sign up</a>
 
         </div>
     </nav>
     
+    <div id="popup">
 
-    <div class="popup">
-        <img class="close" src="../UEB24_GR24/img/logo and icons/close-circle-svgrepo-com.svg" alt="close">
-
-        <div class="container">
-
-            <div class="buttons">
-                <button class="button-login" id="button-login">Log In</button>
-                <button class="button-signup" id="button-signup">Sign Up</button>
-            </div>
-
-            <div class="permbajtja">
-                <div class="log-in" id="log-in">
-
-                </div>
-                <div class="sign-up" id="sign-up">
-
-                </div>
-            </div>
-        </div>
     </div>
+        
+        
 
 
-    <section class="jet-desc" style="margin-top: 6rem;">
+    <section class="jet-desc premium" style="margin-top: 6rem;">
         <div class="jet-desc-image">
-            <div class="topimage">
-                <img id="mainImage" src="../UEB24_GR24/img/2015 LEARJET 75.webp" alt="LEARJET">
-            </div>
             <div class="bottomimages">
                 <img src="../UEB24_GR24/img/CRJ-1000.jpg" alt="LEARJET" onclick="changeImage(this)">
                 <img src="../UEB24_GR24/img/DASSAULT FALCON 2000.webp" alt="LEARJET" onclick="changeImage(this)">
                 <img src="../UEB24_GR24/img/Dash-8-Q400.webp" alt="LEARJET" onclick="changeImage(this)">
+                <img src="../UEB24_GR24/img/Dash-8-Q400.webp" alt="LEARJET" onclick="changeImage(this)">
+
             </div>
+            <div class="topimage">
+                <img class="mainImage" src="../UEB24_GR24/img/2015 LEARJET 75.webp" alt="LEARJET">
+            </div>
+           
         </div>
         <div class="data">
 
@@ -68,76 +64,98 @@
             <h1>XA-RSC - 2015 LEARJET 75</h1>
 
 
-            <p class="highlights">Double Club seating and APU • Low Time and Landings • ⁠MSP Gold • ⁠JSSI Parts Only •
-                ⁠Galley Rest Seat • ⁠Two Owners Since
+            <p class="highlights">
             </p>
-            <div class="more-info">
-                <p>gg</p>
-            </div>
+            
 
 
             <h2>Key Features:</h2>
             <ul>
-                <li><strong>Capacity:</strong> Up to 189 passengers in an all-economy class configuration.</li>
-                <li><strong>Range:</strong> 2,935 nautical miles (5,436 km), ideal for transcontinental flights.</li>
-                <li><strong>Engines:</strong> Powered by CFM International CFM56 engines, offering excellent fuel
-                    efficiency and low maintenance costs.</li>
-                <li><strong>Comfort:</strong> Modern amenities including larger overhead bins, advanced air conditioning
-                    systems, and a quieter cabin environment.</li>
+                <li><strong>Year:</strong>2015.</li>
+                <li><strong>Manufacturer:</strong> LEARJET.</li>
+                <li><strong>Condition:</strong> Used.</li>
+                <li><strong>Total Time:</strong> 1550.</li>
+                <li><strong>Engine Maintenance Program:</strong> MSP Gold.</li>
+                <li><strong>Exterior Notes:</strong> Matterhorn white w/silver, gray, orange & blue.</li>
+                <li><strong>Avionics/Radios:</strong> Garmin G5000 Avionics System.</li>
+
+
+                
                 <li><strong>Safety:</strong> Equipped with state-of-the-art avionics and safety systems, ensuring the
                     highest standards of flight safety.</li>
             </ul>
+            <div class="buttons">
+                <button class="button1">Button 1</button>
+                <button class="button2">Button 2</button>           
+                </div>
 
-            <p>Whether you're flying domestically or to a neighboring country, the Boeing 737-800 ensures a smooth and
-                comfortable journey, combining cutting-edge technology with unmatched operational efficiency.</p>
 
         </div>
 
     </section>
-<!-- ///////////////////////////////////////////////////////////vazhdon //////////////////////////////////////////////////// -->
 
-<br><br><br>
 
-    <footer>
-        <div class="footer-div">
+     <section class="jet-desc" style="margin-top: 6rem;">
+       
+            <div class="jet-desc-image">
+                <div class="bottomimages">
+                    <img src="../UEB24_GR24/img/CRJ-1000.jpg" alt="LEARJET" onclick="changeImage(this)">
+                    <img src="../UEB24_GR24/img/DASSAULT FALCON 2000.webp" alt="LEARJET" onclick="changeImage(this)">
+                    <img src="../UEB24_GR24/img/Dash-8-Q400.webp" alt="LEARJET" onclick="changeImage(this)">
+                <img src="../UEB24_GR24/img/Dash-8-Q400.webp" alt="LEARJET" onclick="changeImage(this)">
 
-            <div class="f-linqet">
-                <a class="about f-link" href="../UEB24_GR24/about.html">About</a>
-                <a class="Contact f-link" href="#Contact">Contact</a>
-                <a class="Terms f-link" href="#terms-and-conditions">Terms & Conditions</a>
-                <a class="Privacy f-link" href="#privacy-policy">Privacy Policy</a>
+                </div>
+                <div class="topimage">
+                    <img class="mainImage" src="../UEB24_GR24/img/2015 LEARJET 75.webp" alt="LEARJET">
+                </div>
+                
+                
+             
             </div>
+        
+        <div class="data">
 
-            <div class="f-logot">
 
-                <div class="facebook f-logo">
-                    <a target="_blank" href="https://www.facebook.com/">
-                        <img class="im-f-logo" src="../UEB24_GR24/img/logo and icons/facebook-svgrepo-com.svg" alt="">
-                    </a>
+            <h1>XA-RSC - 2015 LEARJET 75</h1>
+            <h2>Key Features:</h2>
+            <ul>
+                <li><strong>Year:</strong>2015.</li>
+                <li><strong>Manufacturer:</strong> LEARJET.</li>
+                <li><strong>Condition:</strong> Used.</li>
+                <li><strong>Total Time:</strong> 1550.</li>
+                <li><strong>Engine Maintenance Program:</strong> MSP Gold.</li>
+                <li><strong>Exterior Notes:</strong> Matterhorn white w/silver, gray, orange & blue.</li>
+                <li><strong>Avionics/Radios:</strong> Garmin G5000 Avionics System.</li>
+
+
+                
+                <li><strong>Safety:</strong> Equipped with state-of-the-art avionics and safety systems, ensuring the
+                    highest standards of flight safety.</li>
+            </ul>
+            <div class="buttons">
+                <button class="button1">Button 1</button>
+                <button class="button2">Button 2</button>           
                 </div>
-
-                <div class="instagram f-logo">
-                    <a target="_blank" href="https://www.instagram.com/">
-                        <img class="im-f-logo" src="../UEB24_GR24/img/logo and icons/instagram-svgrepo-com (3).svg" alt="">
-                    </a>
-                </div>
-
-                <div class="X f-logo">
-                    <a target="_blank" href="https://x.com/?lang=en">
-                        <img class="im-f-logo" src="../UEB24_GR24/img/logo and icons/twitter-x.svg" alt="">
-                    </a>
-                </div>
-
-                <div class="you-tube f-logo">
-                    <a target="_blank" href="https://www.youtube.com/">
-                        <img class="im-f-logo" src="../UEB24_GR24/img/logo and icons/youtube-svgrepo-com (4).svg" alt="">
-                    </a>
-                </div>
-
-            </div>
+           
 
         </div>
-    </footer>
+
+    </section>
+    <div id="footer"></div>
+
+    <script type="text/javascript">
+        $('#footer').load('../UEB24_GR24/footer/footer.html');
+    </script>
+
+    <script type="text/javascript">
+        $('#popup').load('../UEB24_GR24/member/popup.html');
+    </script>
+
+
+    <script type="text/javascript" src="../UEB24_GR24/js/hapsiraPunes.js"></script>
+    <script type="text/javascript" src="../UEB24_GR24/js/nav_footer.js"></script>
+    <script type="text/javascript" src="../UEB24_GR24/js/popup.js"></script>
+
 
     <script src="../UEB24_GR24/js/script.js"></script>
     <script src="../UEB24_GR24/js/Sales.js"></script>

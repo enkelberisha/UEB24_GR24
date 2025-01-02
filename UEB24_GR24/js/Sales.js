@@ -1,39 +1,45 @@
 function changeImage(element) {
     // Get the main image element by ID
-    var mainImage = document.getElementById('mainImage');
-    
+    const section = element.closest('.jet-desc');
+    const mainImage = section.querySelector('.mainImage');
     // Update the main image source with the clicked image's source
-    var tempImage=mainImage.src;
+    var tempImage = mainImage.src;
     mainImage.src = element.src;
-element.src=tempImage;
+    element.src = tempImage;
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    function addStarToPremiumDivs() {
+        // Select all div elements on the page
+        const divs = document.querySelectorAll('section');
 
+        // Loop through each div
+        divs.forEach(section => {
+            // Check if the div has the 'premium' class
+            if (section.classList.contains('premium')) {
+                // Create the star element
+                const star = document.createElement('span');
+                star.textContent = '★'; // Unicode for a star
+                star.classList.add('premium-star'); // Add a custom class for styling
 
-var body = document.querySelector("body");
-document.getElementById('log-inOrsign-up').addEventListener('click', function () {
-    document.querySelector('.popup').style.display = 'flex';
-    body.classList.add('body-special');
-})
+                
 
-document.querySelector('.close').addEventListener('click', function () {
-    document.querySelector('.popup').style.display = 'none';
-    body.classList.remove('body-special');
+                // Append the star to the div
+                section.style.position = 'relative'; // Ensure the div can position child elements
+                section.appendChild(star);
+            }else{
+                const button = section.querySelector('button');
 
-})
+                // If a button is found, hide it
+                if (button) {
+                    button.style.display = 'none';
+                }
+            }
+        });
+    }
 
-var btn_login = document.getElementById("button-login");
-var btn_signup = document.getElementById("button-signup");
+    
+    addStarToPremiumDivs();
+    hideButtonInNonPremiumSections();
 
-var login = document.getElementById("log-in");
-var signup = document.getElementById("sign-up");
-
-btn_login.addEventListener('click', function () {
-    signup.style.display = 'none';
-    login.style.display = 'block';
-
-})
-btn_signup.addEventListener('click', function () {
-    login.style.display = 'none';
-    signup.style.display = 'block';
-})
+});

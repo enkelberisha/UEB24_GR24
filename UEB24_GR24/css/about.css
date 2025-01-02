@@ -13,11 +13,10 @@ header {
     text-align: center;
     padding: 0 20px 50px;
     color: #ffffff;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/UEB24_GR24/img/artak-petrosyan-RUBKuvuXdLU-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/UEB24_GR24/img/about/artak-petrosyan-RUBKuvuXdLU-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 350px;
     position: relative;
 }
 
@@ -67,12 +66,6 @@ header {
     flex: 1;
 }
 
-.image-container-luxury img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
 .text-container-luxury {
     flex: 1;
@@ -122,24 +115,12 @@ header {
     background-color: #555;
 }
 
-
-
-
-.jet-charter-space {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-    background-color: #f9f9f9;
-}
-
 .image-container-space {
     flex: 1;
     order: 2;
 }
 
-.image-container-space img {
+.image-container-space img, .image-container-luxury img {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -252,6 +233,26 @@ header {
 .faq-answer.open {
     max-height: 200px;
 }
+
+.carbon {
+    background-image: url(/UEB24_GR24/img/about/mark-adrian-thomas-9QaIdm0B1Uc-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+
+
 
 
 
