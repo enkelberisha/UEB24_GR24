@@ -1,4 +1,4 @@
-
+type="text/javascript";
 
 var body = document.querySelector("body");
 document.getElementById('log-inOrsign-up').addEventListener('click', function () {
