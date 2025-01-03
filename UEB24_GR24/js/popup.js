@@ -1,5 +1,5 @@
 type = "text/javascript";
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", function () {
 
     var body = document.querySelector("body");
     const popup = document.querySelector('.popup');
@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             body.classList.add('body-special');
         });
     }
+
     if (popup && container) {
         popup.addEventListener('click', function (e) {
             if (!container.contains(e.target)) {
