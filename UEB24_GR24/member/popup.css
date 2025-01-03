@@ -17,15 +17,6 @@
 
 }
 
-.close {
-    position: absolute;
-    margin-left: 95%;
-    margin-top: -43%;
-    cursor: pointer;
-    font-size: 30px;
-    color: white;
-}
-
 .container {
     position: absolute;
     display: flex;
@@ -33,8 +24,8 @@
     border-radius: 10px;
     width: 450px;
     height: 600px;
-
-
+    overflow: hidden;
+    background-color: #f9f9f9;
 }
 
 .buttons {
@@ -44,7 +35,7 @@
     align-items: center;
     width: 100%;
     height: 100px;
-    background-color: #f1f0e9;
+    background-color: #f9f9f9;
 
 }
 
@@ -57,7 +48,7 @@
     border-bottom: #597f97e8 solid 3px;
     color: #597f97e8;
     cursor: pointer;
-    background-color: #f1f0e9;
+    background-color: #f9f9f9;
 }
 
 .button-login.active,
@@ -83,7 +74,7 @@
 .sign-up {
     width: 100%;
     height: 600px;
-    background-color: #f1f0e9;
+    background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,16 +88,13 @@
 .li-container,
 .su-container {
     width: 80%;
-    height: 500px;
+    height: auto;
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    border: 2px solid #597f97e8;
-    filter: drop-shadow(1px 2px 4px #183251);
-    border-radius: 10px;
 
     p {
         padding-top: 40px;

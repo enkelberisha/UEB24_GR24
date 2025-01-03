@@ -2,29 +2,26 @@ type = "text/javascript";
 document.addEventListener("DOMContentLoaded", function () {
 
     var body = document.querySelector("body");
+    const popup = document.querySelector('.popup');
+    const container = document.querySelector('.container');
+
     const logInOrSignUpBtn = document.getElementById('log-inOrsign-up');
     if (logInOrSignUpBtn) {
         logInOrSignUpBtn.addEventListener('click', function () {
-            const popup = document.querySelector('.popup');
             if (popup) {
                 popup.style.display = 'flex';
             }
             body.classList.add('body-special');
         });
     }
-
-    const closeBtn = document.querySelector('.close');
-    if (closeBtn) {
-        closeBtn.addEventListener('click', function () {
-            const popup = document.querySelector('.popup');
-            if (popup) {
+    if (popup && container) {
+        popup.addEventListener('click', function (e) {
+            if (!container.contains(e.target)) {
                 popup.style.display = 'none';
+                body.classList.remove('body-special');
             }
-            body.classList.remove('body-special');
         });
     }
-
-
 
     const btnLogin = document.getElementById("button-login");
     const btnSignup = document.getElementById("button-signup");
