@@ -1,26 +1,87 @@
-/* Global Styles */
-* {
+#popup1 {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: auto;
+}
+
+#popup-content {
+    width: 450px;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex-direction: column;
+    height: 300px;
+}
+
+#popup-content h4 {
+    padding-top: 20px;
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#popup-content p {
+    padding-top: 0;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.close {
+    background-color: #597f97;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 20px;
+    transform: translateX(-50%);
+    right: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.close:hover {
+    background-color: #4c6b7b;
+}
+
+#name {
+    position:absolute;
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    height: 20px;
+    opacity: 0;
+    border-radius: 2px;
+    border: 1.5px solid rgb(0, 0, 0);
+    font-size: 0.75rem;
+}
+
+#allsvg {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-nav {
-    border-bottom: solid white 2px;
-    
-    position: relative;
 }
 
-body {
-    font-family: 'Cascadia Mono', sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
-    background: linear-gradient(to bottom right, #597f97, #2a3d48);
-    min-height: 100vh;
-    background-attachment: fixed;
-    color: white;
+svg path {
+    cursor: pointer;
 }
 
-/* Contact Form Section */
+svg path:hover {
+    fill: #597f97;
+}
+
 .contact-form-section {
     padding: 2rem;
     background-color: #fff;
@@ -79,7 +140,6 @@ form button:hover {
     background-color: #46697d;
 }
 
-/* Contact Details Section */
 .contact-details-section {
     text-align: center;
     margin: 2rem auto;
@@ -124,4 +184,23 @@ border-top:white solid 2px;
     background-color: transparent;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    border-bottom: solid white 2px;
+    
+    position: relative;
+}
 
+body {
+    font-family: 'Cascadia Mono', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background: linear-gradient(to bottom right, #597f97, #2a3d48);
+    min-height: 100vh;
+    background-attachment: fixed;
+    color: white;
+}
