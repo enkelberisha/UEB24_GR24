@@ -59,7 +59,7 @@
 }
 
 #name {
-    position:absolute;
+    position:fixed;
     background-color: rgb(255, 255, 255);
     width: fit-content;
     height: 20px;
