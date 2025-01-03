@@ -82,12 +82,12 @@ header {
 }
 
 .Airports-space {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-    background-color: #f9f9f9;
+  max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(64, 92, 110, 0.91);
 }
 
 .slideshow-wrapper{
@@ -242,7 +242,7 @@ header {
     padding: 20px;
     background: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(64, 92, 110, 0.91);
   }
   
   .maintenance-support h1 {
@@ -312,3 +312,155 @@ header {
   .accordion-content li {
     margin-bottom: 8px;
   }
+
+  .guide-section {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(64, 92, 110, 0.91);
+    max-width: 800px;
+  }
+  
+  .guide-section h2 {
+    color: rgba(64, 92, 110, 0.91);
+    margin-bottom: 10px;
+  }
+  
+  .guide-section p {
+    margin: 10px 0;
+  }
+  
+  ul {
+    list-style: square inside;
+    margin: 10px 0 0 0;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 5px 0;
+  }
+
+  .ownership-section {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(64, 92, 110, 0.91);
+    max-width: 800px;
+  }
+  
+  .ownership-section h2 {
+    color: rgba(64, 92, 110, 0.91);
+    margin-bottom: 15px;
+  }
+  
+  .ownership-section p {
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    list-style: disc inside;
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin: 5px 0;
+  }
+
+
+.resource-section {
+  margin: 50px auto;
+  padding: 30px;
+  background: #f8f9fc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(64, 92, 110, 0.91);
+  max-width: 800px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+
+.resource-tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.resource-tab-button {
+  background: rgba(64, 92, 110, 0.91);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 5px;
+  transition: background 0.3s ease;
+}
+
+.resource-tab-button:hover {
+  background: rgba(64, 92, 110, 0.91);
+}
+
+.resource-tab-button.active {
+  background: rgba(64, 92, 110, 0.91);
+  font-weight: bold;
+}
+
+
+.resource-tab-content {
+  display: none;
+  text-align: left;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.resource-tab-content.active {
+  display: block;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.resource-list {
+  list-style: none;
+  padding: 0;
+}
+
+.resource-list li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.resource-list li strong {
+  color: rgba(64, 92, 110, 0.91);
+}
+
+.resource-list a {
+  color: rgba(64, 92, 110, 0.91);
+  text-decoration: none;
+}
+
+.resource-list a:hover {
+  text-decoration: underline;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

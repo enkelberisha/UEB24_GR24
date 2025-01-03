@@ -28,14 +28,14 @@ headers.forEach(header => {
     const content = header.nextElementSibling;
     const allContents = document.querySelectorAll(".accordion-content");
 
-    // Close all other accordion items
+  
     allContents.forEach(c => {
       if (c !== content) {
         c.style.maxHeight = null;
       }
     });
 
-    // Toggle current content
+    
     if (content.style.maxHeight) {
       content.style.maxHeight = null;
     } else {
@@ -43,3 +43,19 @@ headers.forEach(header => {
     }
   });
 });
+
+document.querySelectorAll('.resource-tab-button').forEach(button => {
+  button.addEventListener('click', () => {
+   
+    document.querySelectorAll('.resource-tab-button').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.resource-tab-content').forEach(content => content.classList.remove('active'));
+
+ 
+    button.classList.add('active');
+    const tabId = button.getAttribute('data-tab');
+    document.getElementById(tabId).classList.add('active');
+  });
+});
+
+
+
