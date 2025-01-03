@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 star.textContent = '★'; // Unicode for a star
                 star.classList.add('premium-star'); // Add a custom class for styling
 
-                
-
                 // Append the star to the div
                 section.style.position = 'relative'; // Ensure the div can position child elements
+        
+                
                 section.appendChild(star);
             }else{
                 const button = section.querySelector('button');
