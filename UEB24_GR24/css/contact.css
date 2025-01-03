@@ -38,7 +38,7 @@
     margin-bottom: 20px;
 }
 
-.close {
+.close1 {
     background-color: #597f97;
     color: white;
     border: none;
@@ -54,7 +54,7 @@
     justify-content: center;
 }
 
-.close:hover {
+.close1:hover {
     background-color: #4c6b7b;
 }
 
@@ -67,6 +67,8 @@
     border-radius: 2px;
     border: 1.5px solid rgb(0, 0, 0);
     font-size: 0.75rem;
+    margin-top: 50px;
+    margin-left: 10px;
 }
 
 #allsvg {
@@ -191,14 +193,14 @@ border-top:white solid 2px;
 }
 nav {
     border-bottom: solid white 2px;
-    
+
     position: relative;
 }
 
 body {
     font-family: 'Cascadia Mono', sans-serif;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.1;
     background: linear-gradient(to bottom right, #597f97, #2a3d48);
     min-height: 100vh;
     background-attachment: fixed;
