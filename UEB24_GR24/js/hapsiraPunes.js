@@ -20,4 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(showNextImage, 3000);
 });
 
+function changeValueOnSlider() {
+    const slider = document.getElementById('slider');
+    const rangeValue = document.getElementById('rangeValue');
+    rangeValue.textContent = slider.value;
+
+}
+document.getElementById('slider').addEventListener('input', changeValueOnSlider);
+
+
 
