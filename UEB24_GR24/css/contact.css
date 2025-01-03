@@ -111,8 +111,7 @@ form label {
     color: #333;
 }
 
-form input,
-form textarea {
+#namee, #email, #message {
     padding: 0.8rem;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -127,7 +126,7 @@ form textarea:focus {
     box-shadow: 0 0 5px rgba(89, 127, 151, 0.5);
 }
 
-form button {
+.submit-button {
     background-color: #597f97;
     color: white;
     padding: 0.8rem;
@@ -186,11 +185,6 @@ border-top:white solid 2px;
     background-color: transparent;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 nav {
     border-bottom: solid white 2px;
 
@@ -205,4 +199,8 @@ body {
     min-height: 100vh;
     background-attachment: fixed;
     color: white;
+}
+
+html, body {
+    overflow-x: hidden;
 }
