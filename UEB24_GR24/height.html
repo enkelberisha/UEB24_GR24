@@ -3,80 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dynamic Cabin Illustration</title>
+  <title>Dynamic Cabin Illustrator</title>
+  <link rel="stylesheet" href="css/airplane.css">
+  <link rel="stylesheet" href="footer/footer.css">
+  <link rel="stylesheet" href="css/nav_footer.css">
+  <link rel="stylesheet" href="member/popup.css">
+  <link rel="stylesheet" href="css/height.css">
+  <script src="js/jquery-3.7.1.min.js"></script>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      position: relative;
-      width: 400px;
-      height: 400px;
-      margin: 20px auto;
-    }
-    .cabin {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      border: 5px solid #8B5E3C;
-      box-sizing: border-box;
-      background: transparent;
-    }
-    .cabin-inner {
-      position: absolute;
-      width: 75%;
-      height: 75%;
-      top: 12.5%;
-      left: 12.5%;
-      border-radius: 50%;
-      border: 5px solid #8B5E3C;
-      background: transparent;
-    }
-    .human {
-      position: absolute;
-      bottom: 5%;
-      left: 50%;
-      transform: translateX(-50%);
-      max-width: 100%;
-      height: auto;
-      visibility: hidden; /* Initially hidden */
-      transition: height 0.3s ease, width 0.3s ease, visibility 0s ease-in-out 0.3s;
-    }
-    .label {
-      margin-top: 20px;
-    }
+    
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="cabin"></div>
-    <div class="cabin-inner"></div>
-    <img src="/UEB24_GR24/img/human.svg" alt="Human" class="human" id="human">
+  <div class="content-wrapper1">
+    <nav style="background: rgba(89, 127, 151, 0.91); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+      <div class="logo">
+        <a href="UEB24_GR24.html">
+          <img src="img/logo and icons/Untitled 2.svg" alt="Site logo" style="width: 15rem;">
+        </a>
+      </div>
+      <div class="navigation">
+        <a href="UEB24_GR24.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="recources.html">Resources</a>
+        <a href="staff.html">Staff</a>
+        <a href="contact.html">Contact</a>
+        <a href="#log-in" id="log-inOrsign-up">Log in/Sign up</a>
+      </div>
+    </nav>
+    <br><br><br><br><br>
+
+    <div id="popup">
+        
+    </div>
+    <h1>Dynamic Cabin Illustrator</h1>
+    <div class="container1">
+      <img src="/UEB24_GR24/img/cabin.svg" alt="Cabin" class="cabin-image" />
+      <img src="/UEB24_GR24/img/human.svg" alt="Human" class="human" id="human">
+    </div>
+
+    <div class="label">
+      <label for="height">Enter your height (cm):</label>
+      <input type="number" id="height" placeholder="Enter height" />
+      <button class="button" onclick="adjustHeight()">Submit</button>
+    </div>
   </div>
 
-  <div class="label">
-    <label for="height">Set Human Height (px):</label>
-    <input type="number" id="height" placeholder="Enter height" />
-    <button onclick="adjustHeight()">Update</button>
-  </div>
+  <div id="footer"></div>
+
+  <script type="text/javascript">
+    $('#footer').load('footer/footer.html');
+</script>
+
+<script type="text/javascript">
+    $('#popup').load('member/popup.html');
+</script>
+<script type="text/javascript" src="js/nav_footer.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
 
   <script>
     function adjustHeight() {
-      const heightInput = document.getElementById('height').value;
-      const human = document.getElementById('human');
+  const heightInput = document.getElementById('height').value;
+  const human = document.getElementById('human');
+  const cabinImage = document.querySelector('.cabin-image');
+  const cabinImageHeight = cabinImage.offsetHeight;
 
-      if (heightInput && heightInput > 0) {
-        human.style.visibility = 'visible'; // Make the human visible
-        human.style.height = `${heightInput}px`; // Set the height
-        human.style.width = 'auto'; // Adjust the width to maintain aspect ratio
-      } else {
-        alert('Please enter a valid positive number!');
-      }
-    }
+  if (heightInput && heightInput > 0) {
+    
+    human.style.height = `${heightInput}px`;
+    human.style.visibility = 'visible';
+    human.style.width = 'auto';
+  } else {
+    alert('Please enter a valid positive number!');
+  }
+}
   </script>
 </body>
 </html>
