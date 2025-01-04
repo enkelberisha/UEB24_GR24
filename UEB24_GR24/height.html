@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Cabin Illustration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      margin: 20px auto;
+    }
+    .cabin {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 5px solid #8B5E3C;
+      box-sizing: border-box;
+      background: transparent;
+    }
+    .cabin-inner {
+      position: absolute;
+      width: 75%;
+      height: 75%;
+      top: 12.5%;
+      left: 12.5%;
+      border-radius: 50%;
+      border: 5px solid #8B5E3C;
+      background: transparent;
+    }
+    .human {
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 100%;
+      height: auto;
+      visibility: hidden; /* Initially hidden */
+      transition: height 0.3s ease, width 0.3s ease, visibility 0s ease-in-out 0.3s;
+    }
+    .label {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cabin"></div>
+    <div class="cabin-inner"></div>
+    <img src="/UEB24_GR24/img/human.svg" alt="Human" class="human" id="human">
+  </div>
+
+  <div class="label">
+    <label for="height">Set Human Height (px):</label>
+    <input type="number" id="height" placeholder="Enter height" />
+    <button onclick="adjustHeight()">Update</button>
+  </div>
+
+  <script>
+    function adjustHeight() {
+      const heightInput = document.getElementById('height').value;
+      const human = document.getElementById('human');
+
+      if (heightInput && heightInput > 0) {
+        human.style.visibility = 'visible'; // Make the human visible
+        human.style.height = `${heightInput}px`; // Set the height
+        human.style.width = 'auto'; // Adjust the width to maintain aspect ratio
+      } else {
+        alert('Please enter a valid positive number!');
+      }
+    }
+  </script>
+</body>
+</html>

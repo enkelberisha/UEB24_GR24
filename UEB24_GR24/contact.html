@@ -163,14 +163,14 @@
             <h2>Get in Touch</h2>
             <form id="contact-form">
                 <label for="namee">Full Name</label>
-                <input type="text" id="namee" name="namee" placeholder="Enter your name" required>
+                <input type="text" id="namee" name="namee" placeholder="Enter your name" >
 
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
 
                 <label for="message">Message</label>
                 <textarea id="message" name="message" placeholder="Write your message here..." rows="6"
-                    required></textarea>
+                    ></textarea>
 
                 <button type="submit" class="submit-button">Send Message</button>
             </form>
@@ -249,11 +249,55 @@
         });
     });
 
-    document.querySelector("#close-none").addEventListener("click", () => {
-        document.querySelectorAll(".popup").forEach(popup => popup.style.display = "none");
-        document.querySelector(".popup-none").style.display = "none";
+    $("#close-none").on("click", function() {
+    $(".popup").hide();
+    $(".popup-none").hide();
+    });
     });
 
-    });
+    function validateName(name) {
+        if (!name.value.trim()) {
+            alert('Please enter your full name.');
+            name.focus();
+            return false;
+        }
+        return true;
+    }
+
+    function validateEmail(email) {
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!email.value.trim()) {
+            alert('Please enter your email address.');
+            email.focus();
+            return false;
+        }
+        if (!emailPattern.test(email.value)) {
+            alert('Please enter a valid email address.');
+            email.focus();
+            return false;
+        }
+        return true;
+    }
+
+    function validateMessage(message) {
+        if (!message.value.trim()) {
+            alert('Please write a message.');
+            message.focus();
+            return false;
+        }
+        return true;
+    }
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('namee');
+        const email = document.getElementById('email');
+        const message = document.getElementById('message');
+
+        if (validateName(name) && validateEmail(email) && validateMessage(message)) {
+            alert('Form submitted successfully!');
+        }
+});
 </script>
 </html>
