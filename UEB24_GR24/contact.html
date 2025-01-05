@@ -197,107 +197,143 @@
     <script type="text/javascript" src="js/popup.js"></script>
 </body>
 <script>
-        document.querySelectorAll(".allPaths").forEach(e => {
-        e.setAttribute('class', `allPaths ${e.id}`);
-        e.addEventListener("mouseover", function () {
-            window.onmousemove=function (j) {
-                x = j.clientX
-                y = j.clientY
-                document.getElementById('name').style.top = y-60  + 'px'
-                document.getElementById('name').style.left = x +10 + 'px'
-            }
-            const classes=e.className.baseVal.replace(/ /g, '.')         
-            document.querySelectorAll(`.${classes}`).forEach(country =>{
-                country.style.fill = "#597f97"
-            })
-            document.getElementById("name").style.opacity = 1
-            
-            document.getElementById("namep").innerText = e.id
-        })
-        e.addEventListener("mouseleave", function () {
-            const classes=e.className.baseVal.replace(/ /g, '.')
-            document.querySelectorAll(`.${classes}`).forEach(country =>{
-                country.style.fill = "#ececec"
-            })
-            document.getElementById("name").style.opacity = 0
-        })
-    })
+    document.querySelectorAll(".allPaths").forEach(e => {
+    e.setAttribute('class', `allPaths ${e.id}`);
+    e.addEventListener("mouseover", function () {
+        window.onmousemove = function (j) {
+            const x = j.clientX;
+            const y = j.clientY;
+            document.getElementById('name').style.top = y - 60 + 'px';
+            document.getElementById('name').style.left = x + 10 + 'px';
+        };
 
-    document.addEventListener('DOMContentLoaded', () => {
-    const popupMap = {
-        "United States": ".popup-new-york",
-        "United Kingdom": ".popup-london",
-        "Brazil": ".popup-sao-paulo",
-        "Japan": ".popup-tokyo",
-        "United Arab Emirates": ".popup-dubai",
-        "Kosovo": ".popup-prishtina"
+        const classes = e.className.baseVal.replace(/ /g, '.');
+
+        [...document.querySelectorAll(`.${classes}`)].map(country => {
+            country.style.fill = "#597f97";
+        });
+
+        document.getElementById("name").style.opacity = 1;
+        document.getElementById("namep").innerText = e.id;
+    });
+
+    e.addEventListener("mouseleave", function () {
+        const classes = e.className.baseVal.replace(/ /g, '.');
+
+        [...document.querySelectorAll(`.${classes}`)].map(country => {
+            country.style.fill = "#ececec";
+        });
+
+        document.getElementById("name").style.opacity = 0;
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const popupManager = {
+        popupMap: {
+            "United States": ".popup-new-york",
+            "United Kingdom": ".popup-london",
+            "Brazil": ".popup-sao-paulo",
+            "Japan": ".popup-tokyo",
+            "United Arab Emirates": ".popup-dubai",
+            "Kosovo": ".popup-prishtina"
+        },
+        showPopup(id) {
+            const popupClass = this.popupMap[id] || ".popup-none";
+            document.querySelector(popupClass).style.display = "flex";
+        },
+        closePopup(city) {
+            const popupSelector = `.popup-${city}`;
+            document.querySelectorAll(".popup").forEach(popup => {
+                popup.style.display = "none";
+            });
+            document.querySelector(popupSelector).style.display = "none";
+        },
+        closeAllPopups() {
+            document.querySelectorAll(".popup").forEach(popup => {
+                popup.style.display = "none";
+            });
+        }
     };
 
-    document.querySelectorAll(".allPaths").forEach(e => {
+    [...document.querySelectorAll(".allPaths")].map(e => {
         e.addEventListener("click", () => {
-            const popupClass = popupMap[e.id] || ".popup-none";
-            document.querySelector(popupClass).style.display = "flex";
+            popupManager.showPopup(e.id);
         });
     });
 
+    const cityManager = {
+        cities: ["new-york", "london", "sao-paulo", "tokyo", "dubai", "prishtina"],
+        attachCloseEvents() {
+            this.cities.forEach(city => {
+                document.querySelector(`#close-${city}`).addEventListener("click", () => {
+                    popupManager.closePopup(city);
+                });
+            });
 
-    const cities = ["new-york", "london", "sao-paulo", "tokyo", "dubai", "prishtina"];
-    cities.forEach(city => {
-        document.querySelector(`#close-${city}`).addEventListener("click", () => {
-            document.querySelectorAll(".popup").forEach(popup => popup.style.display = "none");        
-            document.querySelector(`.popup-${city}`).style.display = "none";
-        });
-    });
-
-    $("#close-none").on("click", function() {
-    $(".popup").hide();
-    $(".popup-none").hide();
-    });
-    });
-
-    function validateName(name) {
-        if (!name.value.trim()) {
-            alert('Please enter your full name.');
-            name.focus();
-            return false;
+            $("#close-none").on("click", function () {
+                $(".popup").hide();
+                $(".popup-none").hide();
+            });
         }
-        return true;
+    };
+
+    cityManager.attachCloseEvents();
+});
+
+function validateField(field, validationFn) {
+    return validationFn(field);
+}
+
+function validateName(name) {
+    if (!name.value.trim()) {
+        alert('Please enter your full name.');
+        name.focus();
+        return false;
     }
+    return true;
+}
 
-    function validateEmail(email) {
-        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        if (!email.value.trim()) {
-            alert('Please enter your email address.');
-            email.focus();
-            return false;
-        }
-        if (!emailPattern.test(email.value)) {
-            alert('Please enter a valid email address.');
-            email.focus();
-            return false;
-        }
-        return true;
+function validateEmail(email) {
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!email.value.trim()) {
+        alert('Please enter your email address.');
+        email.focus();
+        return false;
     }
-
-    function validateMessage(message) {
-        if (!message.value.trim()) {
-            alert('Please write a message.');
-            message.focus();
-            return false;
-        }
-        return true;
+    if (!emailPattern.test(email.value)) {
+        alert('Please enter a valid email address.');
+        email.focus();
+        return false;
     }
+    return true;
+}
 
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
+function validateMessage(message) {
+    if (!message.value.trim()) {
+        alert('Please write a message.');
+        message.focus();
+        return false;
+    }
+    return true;
+}
 
-        const name = document.getElementById('namee');
-        const email = document.getElementById('email');
-        const message = document.getElementById('message');
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault();
 
-        if (validateName(name) && validateEmail(email) && validateMessage(message)) {
-            alert('Form submitted successfully!');
-        }
+    const name = document.getElementById('namee');
+    const email = document.getElementById('email');
+    const message = document.getElementById('message');
+
+    const isValid = [
+        validateField(name, validateName),
+        validateField(email, validateEmail),
+        validateField(message, validateMessage)
+    ].reduce((acc, valid) => acc && valid, true);
+
+    if (isValid) {
+        alert('Form submitted successfully!');
+    }
 });
 </script>
 </html>

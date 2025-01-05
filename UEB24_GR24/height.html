@@ -132,11 +132,19 @@ footer {
       const cabinImage = document.querySelector('.cabin-image');
       const cabinImageHeight = cabinImage.offsetHeight;
 
-      if (heightInput && heightInput > 0) {
-        human.style.height = `${heightInput+55}px`;
+      if (isNaN(heightInput)) {
+        alert('Invalid input! Please enter a number.');
+        return;
+      }
+
+      if (heightInput < Number.MAX_VALUE && heightInput > 0) {
+        const formattedHeight = heightInput.toFixed(2);
+        human.style.height = `${+formattedHeight+55}px`;
         human.style.visibility = 'visible';
         human.style.width = 'auto';
         console.log(heightInput);
+      } else if (heightInput >= Number.MAX_VALUE) {
+        alert('The number is too large!');
       } else {
         alert('Please enter a valid positive number!');
       }

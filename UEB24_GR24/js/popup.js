@@ -32,12 +32,19 @@ window.addEventListener("load", function () {
     const spanLogin = document.querySelector(".button-login-span");
     const spanSignup = document.querySelector(".button-signup-span");
 
+    // function toggleActiveButton(activeButton, inactiveButton) {
+    //     if (activeButton && inactiveButton) {
+    //         activeButton.classList.add("active");
+    //         inactiveButton.classList.remove("active");
+    //     }
+    // }
     function toggleActiveButton(activeButton, inactiveButton) {
         if (activeButton && inactiveButton) {
-            activeButton.classList.add("active");
-            inactiveButton.classList.remove("active");
+            $(activeButton).addClass("active");
+            $(inactiveButton).removeClass("active");
         }
     }
+    
 
     if (btnLogin && login && signup) {
         btnLogin.addEventListener("click", () => {
