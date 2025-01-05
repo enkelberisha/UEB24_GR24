@@ -35,8 +35,6 @@ header {
     margin-bottom: 2rem;
 }
 
-
-
 .showcase {
     justify-content: center;
     margin: 2rem auto;
@@ -69,7 +67,6 @@ header {
 .image-container-luxury {
     flex: 1;
 }
-
 
 .text-container-luxury {
     flex: 1;
@@ -131,6 +128,8 @@ header {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 10px solid transparent;
+    border-image: url(/UEB24_GR24/img/about/border-image.webp) 30 stretch;
 }
 
 .text-container-space {
@@ -243,6 +242,8 @@ header {
 
 .carbon {
     background-image: url(/UEB24_GR24/img/about/mark-adrian-thomas-9QaIdm0B1Uc-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     width: 100%;

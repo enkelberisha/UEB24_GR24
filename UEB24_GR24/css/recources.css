@@ -9,20 +9,19 @@ body {
   font-size: 18px;
 }
 
-/* Headers */
 header {
   position: relative;
-  height: 250px; /* Reduced height for a more compact header */
+  height: 250px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #1f1f1f;
   color: #fff;
-  padding: 20px 15px;  /* Adjusted padding for tighter spacing */
+  padding: 20px 15px;
   text-align: center;
   border-bottom: 5px solid #00b8d9;
-  overflow: hidden;  /* Prevents overflow */
+  overflow: hidden;
 }
 
 header::before {
@@ -30,7 +29,7 @@ header::before {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 200%;  /* Adjusted width for responsive fit */
+  width: 200%;
   height: 200%;
   background: linear-gradient(135deg, #00b8d9, #1f1f1f);
   transform: translateX(-50%);
@@ -39,26 +38,25 @@ header::before {
 }
 
 .hero h1 {
-  font-size: 2.5rem; /* Reduced font size */
+  font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 4px; /* Reduced letter spacing */
+  letter-spacing: 4px;
   color: #00b8d9;
-  margin-bottom: 10px;  /* Reduced margin to bring the text closer */
+  margin-bottom: 10px;
   z-index: 1;
 }
 
 .hero p {
-  font-size: 1.1rem; /* Slightly smaller font size */
-  max-width: 90%;  /* Ensures text fits on smaller screens */
+  font-size: 1.1rem;
+  max-width: 90%;
   color: #e0e0e0;
   opacity: 0.9;
-  line-height: 1.4; /* Slightly tighter line spacing */
+  line-height: 1.4; 
   z-index: 1;
-  margin-bottom: 10px;  /* Reduced bottom margin */
+  margin-bottom: 10px; 
 }
 
-/* Containers */
 .flight-status, 
 .financing-leasing, 
 .maintenance-support, 
@@ -71,6 +69,18 @@ header::before {
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(64, 92, 110, 0.91);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+p{
+  padding-left: 15px;
+}
+
+ul {
+  padding-left: 50px;
 }
 
 .content-wrapper{
@@ -99,24 +109,26 @@ header::before {
   margin: 0;
 }
 
-/* Content Wrapper and Grids */
 .content-wrapper {
+  padding-left: 35px;
+  padding-right: 35px;
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 20px;
   align-items: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .slideshow-wrapper {
-  width: 500px;
+  width: 400px;
   height: 300px;
   border-radius: 15%;
   position: relative;
-  overflow: hidden;
+  align-self: center;
 }
 
 .slideshow-right {
-  width: 300%;
+  width: 100%;
   position: relative;
   gap: 20px;
   justify-content: flex-end;
@@ -130,9 +142,10 @@ header::before {
   display: none;
   object-fit: cover;
   position: absolute;
+  border-radius: 15px;
+
 }
 
-/* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -163,7 +176,6 @@ table td {
   border-bottom: 1px solid #ddd;
 }
 
-/* Status Indicators */
 .on-time {
   color: green;
   font-weight: bold;
@@ -179,7 +191,6 @@ table td {
   font-weight: bold;
 }
 
-/* Tabs */
 .tabs {
   display: flex;
   justify-content: center;
@@ -243,35 +254,32 @@ table td {
   text-decoration: underline;
 }
 
-/* Accordion */
 .accordion {
-  border: 1px solid #ddd;
+  width: 100%;
+  background-color: #fff;
   border-radius: 10px;
-  overflow: hidden;
 }
 
 .accordion-item {
-  border-bottom: 1px solid #ddd;
-}
-
-.accordion-item:last-child {
-  border-bottom: none;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .accordion-header {
   width: 100%;
-  background: rgba(64, 92, 110, 0.91);
-  color: white;
-  padding: 15px 20px;
+  padding: 15px;
   font-size: 18px;
+  font-weight: bold;
+  background-color: rgba(89, 127, 151, 0.91);
+  color: white;
   text-align: left;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s;
-}
-
-.accordion-header:hover {
-  background: rgba(64, 92, 110, 0.91);
+  outline: none;
+  transition: background-color 0.3s;
 }
 
 .accordion-content {
@@ -298,7 +306,6 @@ table td {
   margin-bottom: 8px;
 }
 
-/* Resource Section */
 .resource-section {
   background: #f8f9fc;
   text-align: center;
@@ -374,7 +381,6 @@ table td {
   text-decoration: underline;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
       opacity: 0;

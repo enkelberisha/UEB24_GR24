@@ -57,5 +57,16 @@ document.querySelectorAll('.resource-tab-button').forEach(button => {
   });
 });
 
+const data = new Date();
 
+const formattedDate = `${data.getDate().toString().padStart(2, '0')}/${(data.getMonth() + 1).toString().padStart(2, '0')}/${data.getFullYear()}`;
 
+const flightStatusElements = document.getElementsByClassName('flight-status');
+
+for (let i = 0; i < flightStatusElements.length; i++) {
+    const h1 = flightStatusElements[i].querySelector('h1');
+    
+    if (h1) {
+        h1.textContent = "Live Rented Flight Status - " + formattedDate;
+    }
+}
