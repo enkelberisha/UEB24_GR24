@@ -44,34 +44,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 document.addEventListener('DOMContentLoaded', () => {
-    const modal = document.getElementById('moreInfoModal');
-    const closeModal = modal.querySelector('.close');
-    const openModalButtons = document.querySelectorAll('.openModalBtn');
-    const modalDetails = document.getElementById('modalDetails');
+    const modals = document.querySelectorAll('.modal');  // Get all modals
+    const closeModalButtons = document.querySelectorAll('.close');  // Get all close buttons
+    const openModalButtons = document.querySelectorAll('.openModalBtn');  // Get all open modal buttons
 
-    // Function to open the modal with more info
-    function openModal() {
-        
-        modal.style.display = 'flex'; // Show the modal
+    // Function to open the modal associated with the button
+    function openModal(event) {
+        const button = event.currentTarget;
+        const index = Array.from(openModalButtons).indexOf(button);  // Get the index of the clicked button
+        const modal = modals[index];  // Get the corresponding modal using the same index
+        modal.style.display = 'flex';  // Show the modal
     }
 
     // Add event listeners to open modal when button is clicked
     openModalButtons.forEach(button => {
         button.addEventListener('click', openModal);
     });
-
-    // Close modal when close button is clicked
-    closeModal.addEventListener('click', () => {
-        modal.style.display = 'none';
-    });
-
+    
     // Close modal when clicking outside the modal content
     window.addEventListener('click', (event) => {
-        if (event.target === modal) {
-            modal.style.display = 'none';
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = 'none';
         }
     });
 });
+
+
 
 
 
