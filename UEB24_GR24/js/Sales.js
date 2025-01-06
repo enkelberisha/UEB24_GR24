@@ -10,38 +10,72 @@ function changeImage(element) {
 
 document.addEventListener('DOMContentLoaded', () => {
     function addStarToPremiumDivs() {
-        // Select all div elements on the page
-        const divs = document.querySelectorAll('section');
-
-        // Loop through each div
-        divs.forEach(section => {
-            // Check if the div has the 'premium' class
-            if (section.classList.contains('premium')) {
-                // Create the star element
-                const star = document.createElement('span');
-                star.textContent = '★'; // Unicode for a star
-                star.classList.add('premium-star'); // Add a custom class for styling
-
-                // Append the star to the div
-                section.style.position = 'relative'; // Ensure the div can position child elements
         
+        const sections = document.querySelectorAll('section');
+    
+     
+        sections.forEach(section => {
+           
+            if (section.classList.contains('premium')) {
                 
-                section.appendChild(star);
-            }else{
+                const canvas = document.createElement('canvas');
+                canvas.width = 50; 
+                canvas.height = 50;
+                canvas.style.position = 'absolute';
+                canvas.style.bottom = '10px'; 
+                canvas.style.left = '10px'; 
+    
+                
+                const ctx = canvas.getContext('2d');
+                drawStar(ctx, 25, 25, 5, 20, 8); // Qendra, majat, rrezja e jashtme, rrezja e brendshme
+    
+                
+                section.style.position = 'relative';
+                section.appendChild(canvas);
+            } else {
+                
                 const button = section.querySelector('.button1');
-
-                // If a button is found, hide it
+    
                 if (button) {
                     button.style.display = 'none';
                 }
             }
         });
     }
-
     
+    // Funksion që vizaton një yll në canvas
+    function drawStar(ctx, cx, cy, spikes, outerRadius, innerRadius) {
+        let rot = Math.PI / 2 * 3; // Rrotullimi fillestar i yllit
+        let x = cx; // Koordinata X e qendrës
+        let y = cy; // Koordinata Y e qendrës
+        let step = Math.PI / spikes; // Hapi për majat
+    
+        ctx.beginPath();
+        ctx.moveTo(cx, cy - outerRadius); // Lëvizim në fillim të yllit
+        for (let i = 0; i < spikes; i++) {
+            // Vizatoni vijën për rrezen e jashtme
+            x = cx + Math.cos(rot) * outerRadius;
+            y = cy + Math.sin(rot) * outerRadius;
+            ctx.lineTo(x, y);
+            rot += step;
+    
+            // Vizatoni vijën për rrezen e brendshme
+            x = cx + Math.cos(rot) * innerRadius;
+            y = cy + Math.sin(rot) * innerRadius;
+            ctx.lineTo(x, y);
+            rot += step;
+        }
+        ctx.lineTo(cx, cy - outerRadius); // Mbyllim yllin
+        ctx.closePath();
+        ctx.fillStyle = 'gold'; 
+        ctx.fill();
+        ctx.strokeStyle = 'black';
+        ctx.stroke();
+    }
+    
+
     addStarToPremiumDivs();
     
-
 });
 document.addEventListener('DOMContentLoaded', () => {
     const modals = document.querySelectorAll('.modal');  // Get all modals
