@@ -16,8 +16,9 @@ function addPlane(type, name) {
 // aeroplanat--lista
 addPlane("Jet", "Learjet 75");
 addPlane("Jet", "Gulfstream G650");
-addPlane("Propeller", "Cessna 172");
-addPlane("Helicopter", "Bell 407");
+addPlane("Single engine", "Cessna 180");
+addPlane("Multi-Engine", "Beechcraft 58");
+addPlane("Helicopter", "Airbus AS355NP");
 
 // mbush dropdown
 window.addEventListener("load", function () {
