@@ -45,8 +45,8 @@
                 <p style="padding-top: 1rem;font-weight: 700;">Buy, Trade & Sell with Aerosales</p>
             </hgroup>
             <div style="padding-top: 1rem;">
-                <button>Buy an Aircraft</button>
-                <button>Sell an Aircraft</button>
+                <button class="buy">Buy an Aircraft</button>
+                <button class="buy">Sell an Aircraft</button>
             </div>
         </div>
     </header>
@@ -193,7 +193,7 @@
                 Whether you're traveling for business or leisure, our planes provide a seamless
                 and indulgent journey, allowing you to arrive refreshed, focused, and in absolute style.
             </p>
-            <a href="#">Rent in style</a>
+            <a href="../UEB24_GR24/buy-rent/buy-rent.html">Rent in style</a>
         </div>
     </section>
     <br>
@@ -212,7 +212,7 @@
                 our aircraft ensure you never feel confined. Experience the freedom of travel with unmatched
                 comfort and room to move, making every journey as productive or restful as you desire.
             </p>
-            <a href="#">Rent in style</a>
+            <a href="../UEB24_GR24/buy-rent/buy-rent.html">Rent in style</a>
         </div>
     </section>
     <div class="popular">
@@ -293,19 +293,28 @@
 
     <div id="footer"></div>
 
-    <script type="text/javascript">
+    <script >
         $('#footer').load('footer/footer.html');
     </script>
 
-    <script type="text/javascript">
+    <script>
         $('#popup').load('member/popup.html');
+    
     </script>
 
 
     <script type="text/javascript" src="js/hapsiraPunes.js"></script>
     <script type="text/javascript" src="js/nav_footer.js"></script>
     <script type="text/javascript" src="js/popup.js"></script>
-
+    <script>
+        document.querySelectorAll(".buy").forEach(button => {
+            button.addEventListener("click", () => {
+             
+                // Shko te site
+                window.location.href = "../UEB24_GR24/buy-rent/buy-rent.html"; 
+            });
+        });
+        </script>
 </body>
 
 
