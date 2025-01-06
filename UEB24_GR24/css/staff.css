@@ -5,7 +5,8 @@
 
 body {
     background-color: #f4f4f9;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI';
+    letter-spacing: 1px;
     font-size: 18px;
     color: #333;
 }

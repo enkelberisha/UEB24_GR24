@@ -1,3 +1,8 @@
+
+*{
+     font-family: 'Segoe UI';
+        letter-spacing: 1px;
+}
 #popup1 {
     background: radial-gradient(circle, transparent, #2a3d48);
     width: 100%;

@@ -1,11 +1,19 @@
-let currentSlide = 1;
+let currentSlide = 0;
 const slides = document.querySelectorAll('.slideshow-image');
 
+
 function showNextSlide() {
-    slides[currentSlide].style.display = 'none';
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].style.display = 'block';
+    slides[currentSlide].classList.remove('active'); 
+    currentSlide = (currentSlide + 1) % slides.length; 
+    slides[currentSlide].classList.add('active');
 }
+
+
+slides[currentSlide].classList.add('active'); 
+
+
+setInterval(showNextSlide, 3500);
+
 
 setInterval(showNextSlide, 2000);
 

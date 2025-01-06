@@ -5,7 +5,8 @@
 }
 
 html {
-    font-family: Cascadia Mono;
+    font-family: 'Segoe UI';
+    letter-spacing: 1px;
     font-size: 18px;
 }
 
@@ -30,7 +31,7 @@ nav {
 }
 
 nav.scrolled {
-    background: rgba(89, 127, 151, 0.91);
+    background-color: #183251;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -44,6 +45,6 @@ nav a {
 }
 
 nav a:hover {
-    color: #183251;
+    color: #597F97;
 }
 
