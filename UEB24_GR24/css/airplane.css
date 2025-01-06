@@ -5,7 +5,8 @@
     }
 
     html {
-        font-family: Cascadia Mono;
+        font-family: 'Segoe UI';
+        letter-spacing: 1px;
         font-size: 18px;
     }
 
@@ -41,16 +42,17 @@
 
     .hero {
         position: relative;
-        z-index:0;
+        z-index: 0;
         margin-top: -2rem;
         text-shadow: 0 0 14px black;
     }
 
     .hero h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .hero p {
+        font-size: 1.5rem;
         padding: 0.5rem 0;
     }
 
@@ -77,6 +79,7 @@
         transition: 0.5s;
 
     }
+
 
 
 
@@ -182,11 +185,12 @@
 
     .search-bar button:hover {
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        transform: translateY(-0.1em);
     }
 
-
-    .lorema {
-        max-width: 2px;
+    #rangeValue::after {
+        content: " €";
+        font-size: 1em;
     }
 
     .showcase {
@@ -261,18 +265,18 @@
         width: 80%;
         margin: 3rem auto;
         border-spacing: 1rem;
+       
     }
 
     td {
         border: 1px solid rgba(0, 0, 0, 0.05);
         border-left: 1px solid rgba(0, 0, 0, 0.0.05);
-        border-radius: 5px;
+        border-radius: 10px;
         width: 180px;
         height: 140px;
         margin: 0 auto;
-        /* box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2); */
         box-shadow: 6px 6px 10px rgba(89, 127, 151, 0.2);
-        background-color: rgba(220, 219, 206, 0.505);
+        background-color: #597f97b2;
 
     }
 
@@ -296,14 +300,14 @@
         cursor: pointer;
 
     }
+    th h2{
+        letter-spacing: 4px;
+    }
 
 
     .plane-types div {
         width: 10%;
     }
-
-
-
 
 
     .jet-charter-luxury,
