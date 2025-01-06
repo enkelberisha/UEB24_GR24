@@ -5,21 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aerosales</title>
-    <link rel="stylesheet" href="../UEB24_GR24/css/airplane.css">
+    <link rel="stylesheet" href="../UEB24_GR24/css/sales.css">
     <link rel="stylesheet" href="../UEB24_GR24/footer/footer.css">
     <link rel="stylesheet" href="../UEB24_GR24/css/nav_footer.css">
     <link rel="stylesheet" href="../UEB24_GR24/member/popup.css">
-    <link rel="stylesheet" href="../UEB24_GR24/css/sales.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../UEB24_GR24/js/jquery-3.7.1.min.js"></script>
 </head>
 
-
 <body>
-    
     <nav style=" background: rgb(27, 27, 27);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
         <div class="logo">
@@ -37,11 +31,12 @@
 
         </div>
     </nav>
-    
+
     <div id="popup">
 
     </div>
-    
+
+
     <section class="jet-desc premium" style="margin-top: 6rem;">
         <div class="titull">
             <h1>XA-RSC - 2015 LEARJET 75</h1>
@@ -57,54 +52,52 @@
             <div class="topimage">
                 <img class="mainImage" src="../UEB24_GR24/img/2015 LEARJET 75.webp" alt="LEARJET">
             </div>
-           
+
         </div>
-        
+
         <div class="data">
 
-
-            
-
-
-            <p class="highlights">
-            </p>
-            
-
-
             <h2>Key Features:</h2>
+
             <ul>
                 <li><strong>Year:</strong>2015.</li>
                 <li><strong>Manufacturer:</strong> LEARJET.</li>
                 <li><strong>Condition:</strong> Used.</li>
-                <li><strong>Total Time:</strong> 1550.</li>
+                <li><strong>Total Time:</strong> 1550 hours.</li>
                 <li><strong>Engine Maintenance Program:</strong> MSP Gold.</li>
                 <li><strong>Exterior Notes:</strong> Matterhorn white w/silver, gray, orange & blue.</li>
                 <li><strong>Avionics/Radios:</strong> Garmin G5000 Avionics System.</li>
-
-
-                
                 <li><strong>Safety:</strong> Equipped with state-of-the-art avionics and safety systems, ensuring the
-                    highest standards of flight safety.</li>
+                    highest standards of flight safety.
+                    <button class="openModalBtn"><u>More Info...</u></button>
+                </li>
             </ul>
+
             <div id="moreInfoModal" class="modal">
                 <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h2>More Information</h2>
+                    <span class="close"></span>
+                    <p>More Information</p>
+                    <p><strong>Year:</strong> 2015</p>
+                    <p><strong>Manufacturer:</strong> LEARJET</p>
+                    <p><strong>Condition:</strong> Used</p>
+                    <p><strong>Total Time:</strong> 1550 hours</p>
+                    <p><strong>Engine Maintenance Program:</strong> MSP Gold</p>
+                    <p><strong>Avionics:</strong> Garmin G5000 Avionics System</p>
+                    <p><strong>Exterior:</strong> Matterhorn white with silver, gray, orange & blue.</p>
                     <p id="modalDetails"></p>
                 </div>
             </div>
-            <button class="openModalBtn">More Info</button>
-            <div class="buttons">
-                <button class="button1">Button 1</button>
-                <button class="button2">Button 2</button>           
-                </div>
-        </div>
-        
 
+            <div class="more-info">
+                <button class="button1 height" class="open-form">View Height</button>
+                <button class="button1 forma" data-type="Jet" data-name="Learjet 75" class="open-form">Buy / Rent</button>
+            </div>
+        </div>
     </section>
 
+<!--------------------------------------------------------------------------------------------------------------------------->
 
-    <section class="jet-desc premium" style="margin-top: 6rem;">
+    <section class="jet-desc" style="margin-top: 6rem;">
         <div class="titull">
             <h1>XA-RSC - 2015 LEARJET 75</h1>
         </div>
@@ -119,62 +112,96 @@
             <div class="topimage">
                 <img class="mainImage" src="../UEB24_GR24/img/2015 LEARJET 75.webp" alt="LEARJET">
             </div>
-           
+
         </div>
-        
+
         <div class="data">
 
-
-            
-
-
-            <p class="highlights">
-            </p>
-            
-
-
             <h2>Key Features:</h2>
+
             <ul>
                 <li><strong>Year:</strong>2015.</li>
                 <li><strong>Manufacturer:</strong> LEARJET.</li>
                 <li><strong>Condition:</strong> Used.</li>
-                <li><strong>Total Time:</strong> 1550.</li>
+                <li><strong>Total Time:</strong> 1550 hours.</li>
                 <li><strong>Engine Maintenance Program:</strong> MSP Gold.</li>
                 <li><strong>Exterior Notes:</strong> Matterhorn white w/silver, gray, orange & blue.</li>
                 <li><strong>Avionics/Radios:</strong> Garmin G5000 Avionics System.</li>
-
-
-                
                 <li><strong>Safety:</strong> Equipped with state-of-the-art avionics and safety systems, ensuring the
-                    highest standards of flight safety.</li>
+                    highest standards of flight safety.
+                    <button class="openModalBtn"><u>More Info...</u></button>
+                </li>
             </ul>
-            <div class="buttons">
-                <button class="button1">Button 1</button>
-                <button class="button2">Button 2</button>           
-                </div>
-        </div>
-        
 
+            <div id="moreInfoModal" class="modal">
+                <div class="modal-content">
+                    <span class="close"></span>
+                    <p>More Information</p>
+                    <p><strong>Year:</strong> 2015</p>
+                    <p><strong>Manufacturer:</strong> LEARJET</p>
+                    <p><strong>Condition:</strong> Used</p>
+                    <p><strong>Total Time:</strong> 1550 hours</p>
+                    <p><strong>Engine Maintenance Program:</strong> MSP Gold</p>
+                    <p><strong>Avionics:</strong> Garmin G5000 Avionics System</p>
+                    <p><strong>Exterior:</strong> Matterhorn white with silver, gray, orange & blue.</p>
+                    <p id="modalDetails"></p>
+                </div>
+            </div>
+
+            <div class="more-info">
+                <button class="button1 height" class="open-form">View Height</button>
+                <button class="button1 forma" data-type="Jet" data-name="Learjet 75" class="open-form">Buy / Rent</button>
+            </div>
+        </div>
     </section>
+    
     <div id="footer"></div>
 
     <script type="text/javascript">
         $('#footer').load('../UEB24_GR24/footer/footer.html');
     </script>
+    <style>
+        footer {
+            background-color: rgb(27, 27, 27);
+        }
 
+        .footer-div {
+            background-color: rgb(27, 27, 27);
+        }
+    </style>
     <script type="text/javascript">
         $('#popup').load('../UEB24_GR24/member/popup.html');
     </script>
 
 
-    <script type="text/javascript" src="../UEB24_GR24/js/hapsiraPunes.js"></script>
+
     <script type="text/javascript" src="../UEB24_GR24/js/nav_footer.js"></script>
     <script type="text/javascript" src="../UEB24_GR24/js/popup.js"></script>
-
-
-    <script src="../UEB24_GR24/js/script.js"></script>
     <script src="../UEB24_GR24/js/Sales.js"></script>
-   
+    <script>
+        document.querySelectorAll(".forma").forEach(button => {
+            button.addEventListener("click", () => {
+                const selectedType = button.getAttribute("data-type");
+                const selectedName = button.getAttribute("data-name");
+
+                // Ruaj te dhenat ne localStorage
+                localStorage.setItem("selectedType", selectedType);
+                localStorage.setItem("selectedName", selectedName);
+
+                // Shko te site
+                window.location.href = "../UEB24_GR24/buy-rent/buy-rent.html"; 
+            });
+        });
+        document.querySelectorAll(".height").forEach(button => {
+            button.addEventListener("click", () => {
+                
+                // Redirect to the form page
+                window.location.href = "../UEB24_GR24/height.html";  
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
