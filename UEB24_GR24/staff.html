@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="css/nav_footer.css">
     <link rel="stylesheet" href="footer/footer.css">
     <link rel="stylesheet" href="member/popup.css">
-
-        <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
     </head>
 
 <body>
@@ -25,14 +24,23 @@
             </a>
         </div>
         <div class="navigation">
+ plane-types/update-#3
             <a href="index.html" class="nav-text">Home</a>
+
+            
+s
             <a href="about.html" class="nav-text">About</a>
             <a href="recources.html" class="nav-text">Resources</a>
             <a href="staff.html" class="nav-text">Staff</a>
             <a href="contact.html" class="nav-text">Contact</a>
             <a href="#log-in" id="log-inOrsign-up" class="nav-text">Log in/Sign up</a>
+
       
-          </div>
+         
+
+
+        </div>
+
     </nav>
 
     <div id="popup">
@@ -80,8 +88,8 @@
             <div class="team-member">
                 <img src="img/Staff/sales3.jpg" alt="James Smith" class="team-photo">
                 <h2>James Smith</h2>
-                <p>Customer Success Manager</p>
-                <p>Jane ensures a seamless buying process and supports our clients post-sale.</p>
+                <p class="staff-text">Customer Success Manager</p>
+                <p class="staff-text">Jane ensures a seamless buying process and supports our clients post-sale.</p>
             </div>
             <div class="team-member">
                 <img src="img/Staff/sales4.jpg" alt="Bob Johnson" class="team-photo">
@@ -234,6 +242,23 @@
     <script type="text/javascript" src="js/nav_footer.js"></script>
     <script type="text/javascript" src="js/popup.js"></script>
 </body>
+<script>
+    document.querySelectorAll('.team-member').forEach(member => {
+    member.addEventListener('mouseenter', () => {
+        member.querySelectorAll('.staff-text').forEach(text => {
+            text.style.display = 'block';
+            text.style.opacity = '1';
+        });
+    });
 
+    member.addEventListener('mouseleave', () => {
+        member.querySelectorAll('.staff-text').forEach(text => {
+            text.style.display = 'none';
+            text.style.opacity = '0';
+        });
+    });
+});
+
+</script>
 </html>
   
